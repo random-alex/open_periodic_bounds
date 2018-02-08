@@ -12,14 +12,12 @@ dir <- 'data/'
 
 # functions ---------------------------------------------------------------
 
-
 my_prep_pairs <- function(pairs) {
   str_extract_all(pairs,'[0-9]',simplify = F) %>%
     unlist() %>% 
     .[c(3,4)] %>% 
     str_c(sep = '_',collapse = '_')
 }
-
 my_prep_plot <- function(df,t) {
   temp1 <- df %>% 
     filter(temp == t) %>% 
@@ -27,7 +25,6 @@ my_prep_plot <- function(df,t) {
   dim(temp1) <- c(NROW(unique(df$x)),NROW(unique(df$y)))
   return(temp1)
 }
-
 my_read_parameters <- function(fol){
   h5read(fol,'parameters') %>% 
     enframe(name = 'parameter') %>%
@@ -41,7 +38,6 @@ my_read_sim <- function(fol) {
     mutate(value = map(value,enframe,name = 'parameter')) 
   return(data1)
 }
-
 my_read <- function(dir,cl = 3,pattern = '.out.h5'){
   
   cluster <- create_cluster(cl)
@@ -101,7 +97,7 @@ df %>%
 df %>%
   mutate(`T` = as.numeric(`T`)) %>% 
   group_by(L,`T`) %>% 
-  # mutate(value = value/as.numeric(L)^2) %>% 
+  mutate(value = value/as.numeric(L)^2) %>%
   ggplot(aes(`T`,value,col = L)) +
   geom_line() +
   geom_pointrange(aes(ymax = value + error,ymin = value - error)) +
@@ -112,7 +108,7 @@ df %>%
 
 ss <- df %>% 
   # filter(type == 'Staggered Magnetization^2') %>% 
-  group_by(L,`T`) %>% 
+  group_by(L,`T`,LATTICE) %>% 
   summarise(n = n())
 
 
