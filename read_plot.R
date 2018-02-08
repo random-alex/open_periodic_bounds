@@ -75,7 +75,7 @@ df_data <- my_read(dir)
 
 
 df_data1 <- df_data %>% 
-  filter(type %in% c("Staggered Magnetization^2","Staggered Magnetization^4")) %>% 
+  filter(type %in% c("Staggered Magnetization^2")) %>% 
   unnest(value) %>% 
   filter(parameter %in% c('mean')) %>% 
   select(-c(parameter) ) %>% 
