@@ -6,7 +6,7 @@ require(rhdf5)
 require(multidplyr)
 require(tidyverse)
 
-dir <- 'data/'
+dir <- 'data/a lot of temp/'
 
 
 
@@ -96,11 +96,12 @@ df %>%
 
 df %>%
   mutate(`T` = as.numeric(`T`)) %>% 
-  group_by(L,`T`) %>% 
-  mutate(value = value/as.numeric(L)^2) %>%
+  # filter(!L %in% c('50','40','30','28','22')) %>% 
+  # group_by(L,`T`) %>% 
+  mutate(value = value/(as.numeric(as.character(L))^2)) %>%
   ggplot(aes(`T`,value,col = L)) +
   geom_line() +
-  geom_pointrange(aes(ymax = value + error,ymin = value - error)) +
+  # geom_pointrange(aes(ymax = value + error,ymin = value - error)) +
   geom_point(aes(shape = error_convergence),size = 3) +
   facet_grid(type ~ LATTICE,scales = 'free') +
   theme_bw()
@@ -170,7 +171,8 @@ df %>%
 df %>%
   # filter(type == 'Staggered Magnetization^2') %>% 
   mutate(`T` = as.numeric(`T`)) %>% 
-  group_by(L,`T`) %>% 
+  group_by(L,`T`) %>%
+  mutate(value = value/as.numeric(as.character(L))^2) %>%
   mutate(value = (3/2 - (1 -1/3*mean(value[type == 'Magnetization^4'])/mean(value[type == 'Magnetization^2']^2)))) %>%
   ggplot(aes(`T`,value,col = L)) +
   geom_line() +
