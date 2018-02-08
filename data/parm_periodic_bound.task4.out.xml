@@ -1,0 +1,2004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ALPS.xsl"?>
+<SIMULATION xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xml.comp-phys.org/2002/10/ALPS.xsd">
+  <PARAMETERS>
+    <PARAMETER name="local_S">0.5</PARAMETER>
+    <PARAMETER name="THERMALIZATION">5000</PARAMETER>
+    <PARAMETER name="MEASURE[Correlations]">False</PARAMETER>
+    <PARAMETER name="T">0.5625</PARAMETER>
+    <PARAMETER name="SWEEPS">30000</PARAMETER>
+    <PARAMETER name="SEED">1</PARAMETER>
+    <PARAMETER name="MODEL">spin</PARAMETER>
+    <PARAMETER name="J">1</PARAMETER>
+    <PARAMETER name="MEASURE[Structure Factor]">True</PARAMETER>
+    <PARAMETER name="L">10</PARAMETER>
+    <PARAMETER name="h">0</PARAMETER>
+    <PARAMETER name="LATTICE">square lattice</PARAMETER>
+  </PARAMETERS>
+  <AVERAGES>
+    <SCALAR_AVERAGE name="Energy">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">-56.9996</MEAN>
+      <ERROR converged="yes" method="binning">0.0913</ERROR>
+      <VARIANCE method="simple">75</VARIANCE>
+      <AUTOCORR method="binning">1.42</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">-56.99957</MEAN><ERROR method="simple">0.0467</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">-56.99938</MEAN><ERROR method="simple">0.0569</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">-56.9992</MEAN><ERROR method="simple">0.0679</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">-56.9992</MEAN><ERROR method="simple">0.0777</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">-56.9995</MEAN><ERROR method="simple">0.0838</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">-56.9995</MEAN><ERROR method="simple">0.0877</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">-56.9995</MEAN><ERROR method="simple">0.0914</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">-56.9995</MEAN><ERROR method="simple">0.0951</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">-57.0038</MEAN><ERROR method="simple">0.0913</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Energy Density">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">-0.569996</MEAN>
+      <ERROR converged="yes" method="binning">0.000913</ERROR>
+      <VARIANCE method="simple">0.0075</VARIANCE>
+      <AUTOCORR method="binning">1.42</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">-0.5699957</MEAN><ERROR method="simple">0.000467</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">-0.5699938</MEAN><ERROR method="simple">0.000569</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">-0.569992</MEAN><ERROR method="simple">0.000679</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">-0.569992</MEAN><ERROR method="simple">0.000777</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">-0.569995</MEAN><ERROR method="simple">0.000838</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">-0.569995</MEAN><ERROR method="simple">0.000877</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">-0.569995</MEAN><ERROR method="simple">0.000914</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">-0.569995</MEAN><ERROR method="simple">0.000951</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">-0.570038</MEAN><ERROR method="simple">0.000913</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Kinetic Energy">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">-37.997</MEAN>
+      <ERROR converged="yes" method="binning">0.0741</ERROR>
+      <VARIANCE method="simple">42.6</VARIANCE>
+      <AUTOCORR method="binning">1.72</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">-37.997</MEAN><ERROR method="simple">0.0352</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">-37.9966</MEAN><ERROR method="simple">0.0435</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">-37.9962</MEAN><ERROR method="simple">0.0523</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">-37.9962</MEAN><ERROR method="simple">0.06</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">-37.997</MEAN><ERROR method="simple">0.0647</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">-37.997</MEAN><ERROR method="simple">0.0677</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">-37.997</MEAN><ERROR method="simple">0.0714</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">-37.997</MEAN><ERROR method="simple">0.073</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">-38.0022</MEAN><ERROR method="simple">0.0741</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Kinetic Energy Density">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">-0.37997</MEAN>
+      <ERROR converged="yes" method="binning">0.000741</ERROR>
+      <VARIANCE method="simple">0.00426</VARIANCE>
+      <AUTOCORR method="binning">1.72</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">-0.37997</MEAN><ERROR method="simple">0.000352</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">-0.379966</MEAN><ERROR method="simple">0.000435</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">-0.379962</MEAN><ERROR method="simple">0.000523</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">-0.379962</MEAN><ERROR method="simple">0.0006</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">-0.37997</MEAN><ERROR method="simple">0.000647</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">-0.37997</MEAN><ERROR method="simple">0.000677</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">-0.37997</MEAN><ERROR method="simple">0.000714</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">-0.37997</MEAN><ERROR method="simple">0.00073</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">-0.380022</MEAN><ERROR method="simple">0.000741</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Magnetization">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">0.0146</MEAN>
+      <ERROR converged="yes" method="binning">0.0147</ERROR>
+      <VARIANCE method="simple">4.65</VARIANCE>
+      <AUTOCORR method="binning">0.303</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.01463</MEAN><ERROR method="simple">0.0116</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.01458</MEAN><ERROR method="simple">0.0128</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.01461</MEAN><ERROR method="simple">0.0136</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.01461</MEAN><ERROR method="simple">0.0142</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.0145</MEAN><ERROR method="simple">0.0147</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.0145</MEAN><ERROR method="simple">0.0149</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.0145</MEAN><ERROR method="simple">0.0151</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.0145</MEAN><ERROR method="simple">0.0152</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.0165</MEAN><ERROR method="simple">0.0147</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Magnetization Density">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">0.000146</MEAN>
+      <ERROR converged="yes" method="binning">0.000147</ERROR>
+      <VARIANCE method="simple">0.000465</VARIANCE>
+      <AUTOCORR method="binning">0.303</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.0001463</MEAN><ERROR method="simple">0.000116</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.0001458</MEAN><ERROR method="simple">0.000128</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.0001461</MEAN><ERROR method="simple">0.000136</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.0001461</MEAN><ERROR method="simple">0.000142</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.000145</MEAN><ERROR method="simple">0.000147</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.000145</MEAN><ERROR method="simple">0.000149</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.000145</MEAN><ERROR method="simple">0.000151</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.000145</MEAN><ERROR method="simple">0.000152</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.000165</MEAN><ERROR method="simple">0.000147</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Magnetization Density^2">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">0.000465349</MEAN>
+      <ERROR converged="yes" method="binning">4.22e-06</ERROR>
+      <VARIANCE method="simple">4.47e-07</VARIANCE>
+      <AUTOCORR method="binning">0.187</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.000465349</MEAN><ERROR method="simple">3.6e-06</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.00046535</MEAN><ERROR method="simple">3.78e-06</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.00046534</MEAN><ERROR method="simple">3.9e-06</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.00046534</MEAN><ERROR method="simple">4.03e-06</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.000465323</MEAN><ERROR method="simple">4.09e-06</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.000465323</MEAN><ERROR method="simple">4.05e-06</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.000465323</MEAN><ERROR method="simple">4.13e-06</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.000465323</MEAN><ERROR method="simple">4.01e-06</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.000465438</MEAN><ERROR method="simple">4.22e-06</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Magnetization Density^4">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">6.6362e-07</MEAN>
+      <ERROR converged="yes" method="binning">1.35e-08</ERROR>
+      <VARIANCE method="simple">5.24e-12</VARIANCE>
+      <AUTOCORR method="binning">0.0977</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">6.6362e-07</MEAN><ERROR method="simple">1.23e-08</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">6.6364e-07</MEAN><ERROR method="simple">1.27e-08</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">6.6365e-07</MEAN><ERROR method="simple">1.3e-08</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">6.6365e-07</MEAN><ERROR method="simple">1.33e-08</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">6.6367e-07</MEAN><ERROR method="simple">1.35e-08</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">6.6367e-07</MEAN><ERROR method="simple">1.34e-08</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">6.6367e-07</MEAN><ERROR method="simple">1.35e-08</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">6.6367e-07</MEAN><ERROR method="simple">1.32e-08</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">6.6411e-07</MEAN><ERROR method="simple">1.35e-08</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Magnetization^2">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">4.65349</MEAN>
+      <ERROR converged="yes" method="binning">0.0422</ERROR>
+      <VARIANCE method="simple">44.7</VARIANCE>
+      <AUTOCORR method="binning">0.187</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">4.65349</MEAN><ERROR method="simple">0.036</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">4.6535</MEAN><ERROR method="simple">0.0378</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">4.6534</MEAN><ERROR method="simple">0.039</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">4.6534</MEAN><ERROR method="simple">0.0403</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">4.65323</MEAN><ERROR method="simple">0.0409</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">4.65323</MEAN><ERROR method="simple">0.0405</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">4.65323</MEAN><ERROR method="simple">0.0413</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">4.65323</MEAN><ERROR method="simple">0.0401</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">4.65438</MEAN><ERROR method="simple">0.0422</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Magnetization^4">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">66.362</MEAN>
+      <ERROR converged="yes" method="binning">1.35</ERROR>
+      <VARIANCE method="simple">5.24e+04</VARIANCE>
+      <AUTOCORR method="binning">0.0977</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">66.362</MEAN><ERROR method="simple">1.23</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">66.364</MEAN><ERROR method="simple">1.27</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">66.365</MEAN><ERROR method="simple">1.3</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">66.365</MEAN><ERROR method="simple">1.33</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">66.367</MEAN><ERROR method="simple">1.35</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">66.367</MEAN><ERROR method="simple">1.34</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">66.367</MEAN><ERROR method="simple">1.35</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">66.367</MEAN><ERROR method="simple">1.32</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">66.411</MEAN><ERROR method="simple">1.35</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <VECTOR_AVERAGE name="Spin Structure Factor" nvalues="100">
+      <SCALAR_AVERAGE indexvalue="( 0,0 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0465349</MEAN>
+        <ERROR converged="yes" method="binning">0.000422</ERROR>
+        <VARIANCE method="simple">0.00447</VARIANCE>
+        <AUTOCORR method="binning">0.187</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.046534855</MEAN><ERROR method="simple">0.00036</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.046535044</MEAN><ERROR method="simple">0.000378</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.046533972</MEAN><ERROR method="simple">0.00039</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.046533972</MEAN><ERROR method="simple">0.000403</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.046532296</MEAN><ERROR method="simple">0.000409</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.046532296</MEAN><ERROR method="simple">0.000405</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.046532296</MEAN><ERROR method="simple">0.000413</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.046532296</MEAN><ERROR method="simple">0.000401</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.046543843</MEAN><ERROR method="simple">0.000422</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0,0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0582222</MEAN>
+        <ERROR converged="yes" method="binning">0.000372</ERROR>
+        <VARIANCE method="simple">0.00355</VARIANCE>
+        <AUTOCORR method="binning">0.17</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.058222161</MEAN><ERROR method="simple">0.000321</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.058222452</MEAN><ERROR method="simple">0.000345</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.058218933</MEAN><ERROR method="simple">0.000358</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.058218933</MEAN><ERROR method="simple">0.000375</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.05822131</MEAN><ERROR method="simple">0.00038</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.05822131</MEAN><ERROR method="simple">0.000385</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.05822131</MEAN><ERROR method="simple">0.000385</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.05822131</MEAN><ERROR method="simple">0.000368</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.058235195</MEAN><ERROR method="simple">0.000372</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0,1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0872559</MEAN>
+        <ERROR converged="yes" method="binning">0.000614</ERROR>
+        <VARIANCE method="simple">0.00788</VARIANCE>
+        <AUTOCORR method="binning">0.323</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.087255906</MEAN><ERROR method="simple">0.000478</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.087254222</MEAN><ERROR method="simple">0.000516</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.08724959</MEAN><ERROR method="simple">0.00054</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.08724959</MEAN><ERROR method="simple">0.000557</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.087248237</MEAN><ERROR method="simple">0.000564</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.087248237</MEAN><ERROR method="simple">0.000567</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.087248237</MEAN><ERROR method="simple">0.000586</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.087248237</MEAN><ERROR method="simple">0.000599</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.087318841</MEAN><ERROR method="simple">0.000614</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0,1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.124447</MEAN>
+        <ERROR converged="yes" method="binning">0.000837</ERROR>
+        <VARIANCE method="simple">0.0163</VARIANCE>
+        <AUTOCORR method="binning">0.239</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.1244466</MEAN><ERROR method="simple">0.000689</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.12444232</MEAN><ERROR method="simple">0.000752</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.12444135</MEAN><ERROR method="simple">0.000804</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.12444135</MEAN><ERROR method="simple">0.000837</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.12442274</MEAN><ERROR method="simple">0.00086</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.12442274</MEAN><ERROR method="simple">0.000857</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.12442274</MEAN><ERROR method="simple">0.000842</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.12442274</MEAN><ERROR method="simple">0.00085</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.12435838</MEAN><ERROR method="simple">0.000837</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0,2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.161395</MEAN>
+        <ERROR converged="yes" method="binning">0.00108</ERROR>
+        <VARIANCE method="simple">0.0272</VARIANCE>
+        <AUTOCORR method="binning">0.237</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.16139549</MEAN><ERROR method="simple">0.000889</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.16139336</MEAN><ERROR method="simple">0.000982</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.16137875</MEAN><ERROR method="simple">0.00106</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.16137875</MEAN><ERROR method="simple">0.00112</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.16137514</MEAN><ERROR method="simple">0.00112</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.16137514</MEAN><ERROR method="simple">0.00113</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.16137514</MEAN><ERROR method="simple">0.00111</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.16137514</MEAN><ERROR method="simple">0.0011</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.16135274</MEAN><ERROR method="simple">0.00108</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0,3.14159 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.17751</MEAN>
+        <ERROR converged="yes" method="binning">0.00182</ERROR>
+        <VARIANCE method="simple">0.0638</VARIANCE>
+        <AUTOCORR method="binning">0.395</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.17750719</MEAN><ERROR method="simple">0.00136</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17750189</MEAN><ERROR method="simple">0.00149</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.17750029</MEAN><ERROR method="simple">0.0016</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.17750029</MEAN><ERROR method="simple">0.00165</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.17749768</MEAN><ERROR method="simple">0.00172</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.17749768</MEAN><ERROR method="simple">0.00172</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.17749768</MEAN><ERROR method="simple">0.00176</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.17749768</MEAN><ERROR method="simple">0.00173</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17741138</MEAN><ERROR method="simple">0.00182</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0,-2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.161395</MEAN>
+        <ERROR converged="yes" method="binning">0.00108</ERROR>
+        <VARIANCE method="simple">0.0272</VARIANCE>
+        <AUTOCORR method="binning">0.237</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.16139549</MEAN><ERROR method="simple">0.000889</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.16139336</MEAN><ERROR method="simple">0.000982</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.16137875</MEAN><ERROR method="simple">0.00106</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.16137875</MEAN><ERROR method="simple">0.00112</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.16137514</MEAN><ERROR method="simple">0.00112</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.16137514</MEAN><ERROR method="simple">0.00113</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.16137514</MEAN><ERROR method="simple">0.00111</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.16137514</MEAN><ERROR method="simple">0.0011</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.16135274</MEAN><ERROR method="simple">0.00108</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0,-1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.124447</MEAN>
+        <ERROR converged="yes" method="binning">0.000837</ERROR>
+        <VARIANCE method="simple">0.0163</VARIANCE>
+        <AUTOCORR method="binning">0.239</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.1244466</MEAN><ERROR method="simple">0.000689</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.12444232</MEAN><ERROR method="simple">0.000752</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.12444135</MEAN><ERROR method="simple">0.000804</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.12444135</MEAN><ERROR method="simple">0.000837</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.12442274</MEAN><ERROR method="simple">0.00086</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.12442274</MEAN><ERROR method="simple">0.000857</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.12442274</MEAN><ERROR method="simple">0.000842</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.12442274</MEAN><ERROR method="simple">0.00085</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.12435838</MEAN><ERROR method="simple">0.000837</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0,-1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0872559</MEAN>
+        <ERROR converged="yes" method="binning">0.000614</ERROR>
+        <VARIANCE method="simple">0.00788</VARIANCE>
+        <AUTOCORR method="binning">0.323</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.087255906</MEAN><ERROR method="simple">0.000478</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.087254222</MEAN><ERROR method="simple">0.000516</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.08724959</MEAN><ERROR method="simple">0.00054</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.08724959</MEAN><ERROR method="simple">0.000557</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.087248237</MEAN><ERROR method="simple">0.000564</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.087248237</MEAN><ERROR method="simple">0.000567</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.087248237</MEAN><ERROR method="simple">0.000586</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.087248237</MEAN><ERROR method="simple">0.000599</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.087318841</MEAN><ERROR method="simple">0.000614</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0,-0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0582222</MEAN>
+        <ERROR converged="yes" method="binning">0.000372</ERROR>
+        <VARIANCE method="simple">0.00355</VARIANCE>
+        <AUTOCORR method="binning">0.17</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.058222161</MEAN><ERROR method="simple">0.000321</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.058222452</MEAN><ERROR method="simple">0.000345</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.058218933</MEAN><ERROR method="simple">0.000358</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.058218933</MEAN><ERROR method="simple">0.000375</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.05822131</MEAN><ERROR method="simple">0.00038</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.05822131</MEAN><ERROR method="simple">0.000385</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.05822131</MEAN><ERROR method="simple">0.000385</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.05822131</MEAN><ERROR method="simple">0.000368</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.058235195</MEAN><ERROR method="simple">0.000372</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0.628319,0 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0581344</MEAN>
+        <ERROR converged="yes" method="binning">0.00042</ERROR>
+        <VARIANCE method="simple">0.00352</VARIANCE>
+        <AUTOCORR method="binning">0.364</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.058134374</MEAN><ERROR method="simple">0.00032</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.058134901</MEAN><ERROR method="simple">0.000341</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.058137833</MEAN><ERROR method="simple">0.000357</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.058137833</MEAN><ERROR method="simple">0.000365</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.058140083</MEAN><ERROR method="simple">0.000373</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.058140083</MEAN><ERROR method="simple">0.000383</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.058140083</MEAN><ERROR method="simple">0.000388</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.058140083</MEAN><ERROR method="simple">0.000389</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.05814172</MEAN><ERROR method="simple">0.00042</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0.628319,0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0697785</MEAN>
+        <ERROR converged="yes" method="binning">0.000492</ERROR>
+        <VARIANCE method="simple">0.00505</VARIANCE>
+        <AUTOCORR method="binning">0.327</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.069778534</MEAN><ERROR method="simple">0.000383</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.069777654</MEAN><ERROR method="simple">0.000411</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.069779837</MEAN><ERROR method="simple">0.000434</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.069779837</MEAN><ERROR method="simple">0.000451</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.069778218</MEAN><ERROR method="simple">0.00046</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.069778218</MEAN><ERROR method="simple">0.000479</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.069778218</MEAN><ERROR method="simple">0.000495</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.069778218</MEAN><ERROR method="simple">0.000472</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.069791489</MEAN><ERROR method="simple">0.000492</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0.628319,1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0981782</MEAN>
+        <ERROR converged="yes" method="binning">0.000612</ERROR>
+        <VARIANCE method="simple">0.01</VARIANCE>
+        <AUTOCORR method="binning">0.142</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.09817817</MEAN><ERROR method="simple">0.00054</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.098173286</MEAN><ERROR method="simple">0.000587</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.098149011</MEAN><ERROR method="simple">0.000616</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.098149011</MEAN><ERROR method="simple">0.00063</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.098157288</MEAN><ERROR method="simple">0.000637</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.098157288</MEAN><ERROR method="simple">0.00065</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.098157288</MEAN><ERROR method="simple">0.00064</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.098157288</MEAN><ERROR method="simple">0.000612</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.098157597</MEAN><ERROR method="simple">0.000612</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0.628319,1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.139433</MEAN>
+        <ERROR converged="yes" method="binning">0.000926</ERROR>
+        <VARIANCE method="simple">0.0199</VARIANCE>
+        <AUTOCORR method="binning">0.242</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.13943327</MEAN><ERROR method="simple">0.00076</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.13943365</MEAN><ERROR method="simple">0.000835</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.13942363</MEAN><ERROR method="simple">0.000889</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.13942363</MEAN><ERROR method="simple">0.000915</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.1394075</MEAN><ERROR method="simple">0.00093</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.1394075</MEAN><ERROR method="simple">0.000935</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.1394075</MEAN><ERROR method="simple">0.000948</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.1394075</MEAN><ERROR method="simple">0.000981</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.13941719</MEAN><ERROR method="simple">0.000926</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0.628319,2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.178209</MEAN>
+        <ERROR converged="yes" method="binning">0.00129</ERROR>
+        <VARIANCE method="simple">0.0335</VARIANCE>
+        <AUTOCORR method="binning">0.353</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.178209</MEAN><ERROR method="simple">0.000987</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17821342</MEAN><ERROR method="simple">0.00109</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.178219</MEAN><ERROR method="simple">0.00117</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.178219</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.17820924</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.17820924</MEAN><ERROR method="simple">0.00122</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.17820924</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.17820924</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17824248</MEAN><ERROR method="simple">0.00129</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0.628319,3.14159 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.194689</MEAN>
+        <ERROR converged="yes" method="binning">0.00134</ERROR>
+        <VARIANCE method="simple">0.0395</VARIANCE>
+        <AUTOCORR method="binning">0.277</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.19468862</MEAN><ERROR method="simple">0.00107</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.19468891</MEAN><ERROR method="simple">0.00119</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.19465335</MEAN><ERROR method="simple">0.00129</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.19465335</MEAN><ERROR method="simple">0.00134</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.1946506</MEAN><ERROR method="simple">0.00136</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.1946506</MEAN><ERROR method="simple">0.00139</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.1946506</MEAN><ERROR method="simple">0.0014</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.1946506</MEAN><ERROR method="simple">0.00138</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.19456049</MEAN><ERROR method="simple">0.00134</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0.628319,-2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.179226</MEAN>
+        <ERROR converged="yes" method="binning">0.00132</ERROR>
+        <VARIANCE method="simple">0.0336</VARIANCE>
+        <AUTOCORR method="binning">0.394</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.17922595</MEAN><ERROR method="simple">0.000987</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17921309</MEAN><ERROR method="simple">0.00109</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.17919385</MEAN><ERROR method="simple">0.00117</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.17919385</MEAN><ERROR method="simple">0.00123</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.1792059</MEAN><ERROR method="simple">0.00126</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.1792059</MEAN><ERROR method="simple">0.00126</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.1792059</MEAN><ERROR method="simple">0.00127</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.1792059</MEAN><ERROR method="simple">0.00128</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17920746</MEAN><ERROR method="simple">0.00132</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0.628319,-1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.139666</MEAN>
+        <ERROR converged="yes" method="binning">0.000982</ERROR>
+        <VARIANCE method="simple">0.0204</VARIANCE>
+        <AUTOCORR method="binning">0.314</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.1396661</MEAN><ERROR method="simple">0.00077</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.13966334</MEAN><ERROR method="simple">0.000844</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.13966349</MEAN><ERROR method="simple">0.000899</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.13966349</MEAN><ERROR method="simple">0.000929</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.13967143</MEAN><ERROR method="simple">0.00094</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.13967143</MEAN><ERROR method="simple">0.000934</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.13967143</MEAN><ERROR method="simple">0.00095</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.13967143</MEAN><ERROR method="simple">0.000963</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.13958574</MEAN><ERROR method="simple">0.000982</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0.628319,-1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.100074</MEAN>
+        <ERROR converged="yes" method="binning">0.000613</ERROR>
+        <VARIANCE method="simple">0.0104</VARIANCE>
+        <AUTOCORR method="binning">0.123</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.10007407</MEAN><ERROR method="simple">0.000549</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.10007622</MEAN><ERROR method="simple">0.000593</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.10007123</MEAN><ERROR method="simple">0.000628</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.10007123</MEAN><ERROR method="simple">0.00064</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.10007184</MEAN><ERROR method="simple">0.000644</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.10007184</MEAN><ERROR method="simple">0.000638</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.10007184</MEAN><ERROR method="simple">0.000675</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.10007184</MEAN><ERROR method="simple">0.00066</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.10013559</MEAN><ERROR method="simple">0.000613</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 0.628319,-0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0692731</MEAN>
+        <ERROR converged="yes" method="binning">0.000465</ERROR>
+        <VARIANCE method="simple">0.00493</VARIANCE>
+        <AUTOCORR method="binning">0.255</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.069273144</MEAN><ERROR method="simple">0.000378</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.069266371</MEAN><ERROR method="simple">0.000402</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.069269421</MEAN><ERROR method="simple">0.000422</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.069269421</MEAN><ERROR method="simple">0.000436</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.069270596</MEAN><ERROR method="simple">0.000446</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.069270596</MEAN><ERROR method="simple">0.000455</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.069270596</MEAN><ERROR method="simple">0.000446</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.069270596</MEAN><ERROR method="simple">0.000428</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.069256254</MEAN><ERROR method="simple">0.000465</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.25664,0 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0889003</MEAN>
+        <ERROR converged="yes" method="binning">0.000628</ERROR>
+        <VARIANCE method="simple">0.00823</VARIANCE>
+        <AUTOCORR method="binning">0.324</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.088900258</MEAN><ERROR method="simple">0.000489</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.088897476</MEAN><ERROR method="simple">0.000532</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.088902416</MEAN><ERROR method="simple">0.000564</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.088902416</MEAN><ERROR method="simple">0.000586</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.088909014</MEAN><ERROR method="simple">0.000594</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.088909014</MEAN><ERROR method="simple">0.000595</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.088909014</MEAN><ERROR method="simple">0.000601</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.088909014</MEAN><ERROR method="simple">0.000608</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.088880352</MEAN><ERROR method="simple">0.000628</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.25664,0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0992702</MEAN>
+        <ERROR converged="yes" method="binning">0.000636</ERROR>
+        <VARIANCE method="simple">0.0102</VARIANCE>
+        <AUTOCORR method="binning">0.182</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.099270186</MEAN><ERROR method="simple">0.000545</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.099272873</MEAN><ERROR method="simple">0.00059</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.099272729</MEAN><ERROR method="simple">0.000619</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.099272729</MEAN><ERROR method="simple">0.000639</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.099280135</MEAN><ERROR method="simple">0.000656</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.099280135</MEAN><ERROR method="simple">0.000654</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.099280135</MEAN><ERROR method="simple">0.000666</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.099280135</MEAN><ERROR method="simple">0.000633</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.099279011</MEAN><ERROR method="simple">0.000636</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.25664,1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.130224</MEAN>
+        <ERROR converged="yes" method="binning">0.000806</ERROR>
+        <VARIANCE method="simple">0.0172</VARIANCE>
+        <AUTOCORR method="binning">0.151</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.13022425</MEAN><ERROR method="simple">0.000707</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.13022034</MEAN><ERROR method="simple">0.000771</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.13021792</MEAN><ERROR method="simple">0.000814</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.13021792</MEAN><ERROR method="simple">0.000834</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.13022495</MEAN><ERROR method="simple">0.000847</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.13022495</MEAN><ERROR method="simple">0.000841</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.13022495</MEAN><ERROR method="simple">0.000819</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.13022495</MEAN><ERROR method="simple">0.000812</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.13031329</MEAN><ERROR method="simple">0.000806</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.25664,1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.177121</MEAN>
+        <ERROR converged="yes" method="binning">0.00114</ERROR>
+        <VARIANCE method="simple">0.0325</VARIANCE>
+        <AUTOCORR method="binning">0.191</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.17712067</MEAN><ERROR method="simple">0.000972</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17712562</MEAN><ERROR method="simple">0.00107</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.17713256</MEAN><ERROR method="simple">0.00114</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.17713256</MEAN><ERROR method="simple">0.00119</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.17714524</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.17714524</MEAN><ERROR method="simple">0.00123</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.17714524</MEAN><ERROR method="simple">0.00122</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.17714524</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17709717</MEAN><ERROR method="simple">0.00114</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.25664,2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.231409</MEAN>
+        <ERROR converged="yes" method="binning">0.00145</ERROR>
+        <VARIANCE method="simple">0.0542</VARIANCE>
+        <AUTOCORR method="binning">0.172</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.23140928</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.23140678</MEAN><ERROR method="simple">0.00138</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.2314145</MEAN><ERROR method="simple">0.00148</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.2314145</MEAN><ERROR method="simple">0.00152</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.23144016</MEAN><ERROR method="simple">0.00156</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.23144016</MEAN><ERROR method="simple">0.00157</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.23144016</MEAN><ERROR method="simple">0.00154</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.23144016</MEAN><ERROR method="simple">0.00149</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.23140071</MEAN><ERROR method="simple">0.00145</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.25664,3.14159 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.253915</MEAN>
+        <ERROR converged="yes" method="binning">0.00182</ERROR>
+        <VARIANCE method="simple">0.0662</VARIANCE>
+        <AUTOCORR method="binning">0.366</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.25391492</MEAN><ERROR method="simple">0.00139</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.25392223</MEAN><ERROR method="simple">0.00153</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.25391158</MEAN><ERROR method="simple">0.00162</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.25391158</MEAN><ERROR method="simple">0.00168</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.25392561</MEAN><ERROR method="simple">0.0017</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.25392561</MEAN><ERROR method="simple">0.00173</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.25392561</MEAN><ERROR method="simple">0.0017</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.25392561</MEAN><ERROR method="simple">0.00176</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.25387512</MEAN><ERROR method="simple">0.00182</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.25664,-2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.229746</MEAN>
+        <ERROR converged="yes" method="binning">0.00159</ERROR>
+        <VARIANCE method="simple">0.0534</VARIANCE>
+        <AUTOCORR method="binning">0.316</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.22974564</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.2297433</MEAN><ERROR method="simple">0.00137</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.22975156</MEAN><ERROR method="simple">0.00145</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.22975156</MEAN><ERROR method="simple">0.00149</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.22972459</MEAN><ERROR method="simple">0.00151</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.22972459</MEAN><ERROR method="simple">0.00153</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.22972459</MEAN><ERROR method="simple">0.00151</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.22972459</MEAN><ERROR method="simple">0.00152</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.22959413</MEAN><ERROR method="simple">0.00159</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.25664,-1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.178935</MEAN>
+        <ERROR converged="yes" method="binning">0.00123</ERROR>
+        <VARIANCE method="simple">0.0324</VARIANCE>
+        <AUTOCORR method="binning">0.304</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.17893513</MEAN><ERROR method="simple">0.00097</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17894013</MEAN><ERROR method="simple">0.00107</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.17894272</MEAN><ERROR method="simple">0.00113</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.17894272</MEAN><ERROR method="simple">0.00118</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.17892587</MEAN><ERROR method="simple">0.00122</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.17892587</MEAN><ERROR method="simple">0.00123</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.17892587</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.17892587</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17886898</MEAN><ERROR method="simple">0.00123</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.25664,-1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.131095</MEAN>
+        <ERROR converged="yes" method="binning">0.000953</ERROR>
+        <VARIANCE method="simple">0.0177</VARIANCE>
+        <AUTOCORR method="binning">0.384</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.13109514</MEAN><ERROR method="simple">0.000717</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.13109543</MEAN><ERROR method="simple">0.000787</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.13110172</MEAN><ERROR method="simple">0.000836</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.13110172</MEAN><ERROR method="simple">0.000871</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.13109034</MEAN><ERROR method="simple">0.000896</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.13109034</MEAN><ERROR method="simple">0.000877</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.13109034</MEAN><ERROR method="simple">0.000922</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.13109034</MEAN><ERROR method="simple">0.000904</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.13104615</MEAN><ERROR method="simple">0.000953</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.25664,-0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.099774</MEAN>
+        <ERROR converged="yes" method="binning">0.000636</ERROR>
+        <VARIANCE method="simple">0.0103</VARIANCE>
+        <AUTOCORR method="binning">0.177</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.099774025</MEAN><ERROR method="simple">0.000547</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.099776515</MEAN><ERROR method="simple">0.000596</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.099771856</MEAN><ERROR method="simple">0.000633</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.099771856</MEAN><ERROR method="simple">0.000656</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.099775306</MEAN><ERROR method="simple">0.000669</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.099775306</MEAN><ERROR method="simple">0.000668</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.099775306</MEAN><ERROR method="simple">0.000641</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.099775306</MEAN><ERROR method="simple">0.000666</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.099801972</MEAN><ERROR method="simple">0.000636</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.88496,0 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.126993</MEAN>
+        <ERROR converged="yes" method="binning">0.000838</ERROR>
+        <VARIANCE method="simple">0.017</VARIANCE>
+        <AUTOCORR method="binning">0.21</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.12699265</MEAN><ERROR method="simple">0.000703</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.12699517</MEAN><ERROR method="simple">0.000773</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.12699951</MEAN><ERROR method="simple">0.000832</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.12699951</MEAN><ERROR method="simple">0.000861</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.12701646</MEAN><ERROR method="simple">0.000883</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.12701646</MEAN><ERROR method="simple">0.000891</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.12701646</MEAN><ERROR method="simple">0.000883</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.12701646</MEAN><ERROR method="simple">0.000856</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.12705738</MEAN><ERROR method="simple">0.000838</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.88496,0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.140417</MEAN>
+        <ERROR converged="yes" method="binning">0.000873</ERROR>
+        <VARIANCE method="simple">0.0201</VARIANCE>
+        <AUTOCORR method="binning">0.154</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.14041723</MEAN><ERROR method="simple">0.000764</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.14041709</MEAN><ERROR method="simple">0.00084</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.14042507</MEAN><ERROR method="simple">0.000907</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.14042507</MEAN><ERROR method="simple">0.000946</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.14043254</MEAN><ERROR method="simple">0.000941</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.14043254</MEAN><ERROR method="simple">0.000943</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.14043254</MEAN><ERROR method="simple">0.000932</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.14043254</MEAN><ERROR method="simple">0.000888</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.14051396</MEAN><ERROR method="simple">0.000873</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.88496,1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.180878</MEAN>
+        <ERROR converged="yes" method="binning">0.00127</ERROR>
+        <VARIANCE method="simple">0.033</VARIANCE>
+        <AUTOCORR method="binning">0.337</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.1808779</MEAN><ERROR method="simple">0.000979</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.18088304</MEAN><ERROR method="simple">0.00108</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.18087449</MEAN><ERROR method="simple">0.00115</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.18087449</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.1808582</MEAN><ERROR method="simple">0.00123</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.1808582</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.1808582</MEAN><ERROR method="simple">0.00124</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.1808582</MEAN><ERROR method="simple">0.00124</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.18093196</MEAN><ERROR method="simple">0.00127</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.88496,1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.24171</MEAN>
+        <ERROR converged="yes" method="binning">0.00176</ERROR>
+        <VARIANCE method="simple">0.0586</VARIANCE>
+        <AUTOCORR method="binning">0.408</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.2417103</MEAN><ERROR method="simple">0.0013</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.24167871</MEAN><ERROR method="simple">0.00144</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.24168503</MEAN><ERROR method="simple">0.00153</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.24168503</MEAN><ERROR method="simple">0.00158</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.24165127</MEAN><ERROR method="simple">0.00162</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.24165127</MEAN><ERROR method="simple">0.00163</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.24165127</MEAN><ERROR method="simple">0.00164</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.24165127</MEAN><ERROR method="simple">0.00166</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.24174332</MEAN><ERROR method="simple">0.00176</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.88496,2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.334359</MEAN>
+        <ERROR converged="yes" method="binning">0.00189</ERROR>
+        <VARIANCE method="simple">0.111</VARIANCE>
+        <AUTOCORR method="binning">0.0516</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.33435905</MEAN><ERROR method="simple">0.0018</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.33436865</MEAN><ERROR method="simple">0.00196</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.33438376</MEAN><ERROR method="simple">0.0021</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.33438376</MEAN><ERROR method="simple">0.00217</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.33441672</MEAN><ERROR method="simple">0.00221</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.33441672</MEAN><ERROR method="simple">0.00212</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.33441672</MEAN><ERROR method="simple">0.00209</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.33441672</MEAN><ERROR method="simple">0.00202</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.3343289</MEAN><ERROR method="simple">0.00189</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.88496,3.14159 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.399804</MEAN>
+        <ERROR converged="yes" method="binning">0.00258</ERROR>
+        <VARIANCE method="simple">0.159</VARIANCE>
+        <AUTOCORR method="binning">0.223</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.39980402</MEAN><ERROR method="simple">0.00215</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.39981286</MEAN><ERROR method="simple">0.00233</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.39975286</MEAN><ERROR method="simple">0.00248</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.39975286</MEAN><ERROR method="simple">0.00254</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.3996393</MEAN><ERROR method="simple">0.00263</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.3996393</MEAN><ERROR method="simple">0.00268</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.3996393</MEAN><ERROR method="simple">0.00264</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.3996393</MEAN><ERROR method="simple">0.00265</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.39943409</MEAN><ERROR method="simple">0.00258</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.88496,-2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.337548</MEAN>
+        <ERROR converged="yes" method="binning">0.00219</ERROR>
+        <VARIANCE method="simple">0.114</VARIANCE>
+        <AUTOCORR method="binning">0.224</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.33754839</MEAN><ERROR method="simple">0.00182</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.33753747</MEAN><ERROR method="simple">0.00198</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.3375284</MEAN><ERROR method="simple">0.00211</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.3375284</MEAN><ERROR method="simple">0.00214</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.33757866</MEAN><ERROR method="simple">0.00219</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.33757866</MEAN><ERROR method="simple">0.00221</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.33757866</MEAN><ERROR method="simple">0.00211</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.33757866</MEAN><ERROR method="simple">0.0021</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.33748023</MEAN><ERROR method="simple">0.00219</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.88496,-1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.243981</MEAN>
+        <ERROR converged="yes" method="binning">0.00168</ERROR>
+        <VARIANCE method="simple">0.0593</VARIANCE>
+        <AUTOCORR method="binning">0.321</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.24398093</MEAN><ERROR method="simple">0.00131</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.24396689</MEAN><ERROR method="simple">0.00144</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.243971</MEAN><ERROR method="simple">0.00153</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.243971</MEAN><ERROR method="simple">0.00158</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.24399003</MEAN><ERROR method="simple">0.00163</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.24399003</MEAN><ERROR method="simple">0.00165</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.24399003</MEAN><ERROR method="simple">0.0017</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.24399003</MEAN><ERROR method="simple">0.00166</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.24395037</MEAN><ERROR method="simple">0.00168</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.88496,-1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.177321</MEAN>
+        <ERROR converged="yes" method="binning">0.00133</ERROR>
+        <VARIANCE method="simple">0.0324</VARIANCE>
+        <AUTOCORR method="binning">0.441</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.17732052</MEAN><ERROR method="simple">0.00097</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17732254</MEAN><ERROR method="simple">0.00106</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.17732851</MEAN><ERROR method="simple">0.00113</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.17732851</MEAN><ERROR method="simple">0.00117</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.17734208</MEAN><ERROR method="simple">0.00119</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.17734208</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.17734208</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.17734208</MEAN><ERROR method="simple">0.0013</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17739731</MEAN><ERROR method="simple">0.00133</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 1.88496,-0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.139923</MEAN>
+        <ERROR converged="yes" method="binning">0.00095</ERROR>
+        <VARIANCE method="simple">0.02</VARIANCE>
+        <AUTOCORR method="binning">0.276</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.13992277</MEAN><ERROR method="simple">0.000763</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.13992382</MEAN><ERROR method="simple">0.000837</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.13992161</MEAN><ERROR method="simple">0.000893</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.13992161</MEAN><ERROR method="simple">0.000919</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.13992249</MEAN><ERROR method="simple">0.000931</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.13992249</MEAN><ERROR method="simple">0.00096</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.13992249</MEAN><ERROR method="simple">0.000949</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.13992249</MEAN><ERROR method="simple">0.000935</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.13994061</MEAN><ERROR method="simple">0.00095</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 2.51327,0 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.162412</MEAN>
+        <ERROR converged="yes" method="binning">0.0012</ERROR>
+        <VARIANCE method="simple">0.0279</VARIANCE>
+        <AUTOCORR method="binning">0.394</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.16241206</MEAN><ERROR method="simple">0.000899</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.162414</MEAN><ERROR method="simple">0.001</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.16242192</MEAN><ERROR method="simple">0.00107</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.16242192</MEAN><ERROR method="simple">0.0011</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.16243131</MEAN><ERROR method="simple">0.00112</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.16243131</MEAN><ERROR method="simple">0.00115</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.16243131</MEAN><ERROR method="simple">0.00116</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.16243131</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.1622924</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 2.51327,0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.179297</MEAN>
+        <ERROR converged="yes" method="binning">0.00125</ERROR>
+        <VARIANCE method="simple">0.033</VARIANCE>
+        <AUTOCORR method="binning">0.313</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.17929747</MEAN><ERROR method="simple">0.000979</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17929793</MEAN><ERROR method="simple">0.00108</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.1793024</MEAN><ERROR method="simple">0.00116</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.1793024</MEAN><ERROR method="simple">0.00119</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.17932403</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.17932403</MEAN><ERROR method="simple">0.00123</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.17932403</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.17932403</MEAN><ERROR method="simple">0.0013</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17935514</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 2.51327,1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.229526</MEAN>
+        <ERROR converged="yes" method="binning">0.00152</ERROR>
+        <VARIANCE method="simple">0.0538</VARIANCE>
+        <AUTOCORR method="binning">0.239</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.2295262</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.2295323</MEAN><ERROR method="simple">0.00138</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.22954315</MEAN><ERROR method="simple">0.00148</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.22954315</MEAN><ERROR method="simple">0.00152</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.2295473</MEAN><ERROR method="simple">0.00155</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.2295473</MEAN><ERROR method="simple">0.00154</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.2295473</MEAN><ERROR method="simple">0.0015</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.2295473</MEAN><ERROR method="simple">0.00147</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.22955437</MEAN><ERROR method="simple">0.00152</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 2.51327,1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.336451</MEAN>
+        <ERROR converged="yes" method="binning">0.00225</ERROR>
+        <VARIANCE method="simple">0.113</VARIANCE>
+        <AUTOCORR method="binning">0.268</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.33645133</MEAN><ERROR method="simple">0.00181</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.33644641</MEAN><ERROR method="simple">0.00198</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.3364555</MEAN><ERROR method="simple">0.00211</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.3364555</MEAN><ERROR method="simple">0.00217</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.33646133</MEAN><ERROR method="simple">0.00222</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.33646133</MEAN><ERROR method="simple">0.00224</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.33646133</MEAN><ERROR method="simple">0.00225</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.33646133</MEAN><ERROR method="simple">0.00232</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.3366789</MEAN><ERROR method="simple">0.00225</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 2.51327,2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.585722</MEAN>
+        <ERROR converged="yes" method="binning">0.00376</ERROR>
+        <VARIANCE method="simple">0.333</VARIANCE>
+        <AUTOCORR method="binning">0.231</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.58572239</MEAN><ERROR method="simple">0.00311</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.58567653</MEAN><ERROR method="simple">0.00336</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.58569991</MEAN><ERROR method="simple">0.00357</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.58569991</MEAN><ERROR method="simple">0.00368</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.5857108</MEAN><ERROR method="simple">0.00374</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.5857108</MEAN><ERROR method="simple">0.00372</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.5857108</MEAN><ERROR method="simple">0.00375</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.5857108</MEAN><ERROR method="simple">0.00378</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.58591018</MEAN><ERROR method="simple">0.00376</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 2.51327,3.14159 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.877868</MEAN>
+        <ERROR converged="yes" method="binning">0.00502</ERROR>
+        <VARIANCE method="simple">0.715</VARIANCE>
+        <AUTOCORR method="binning">0.107</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.87786832</MEAN><ERROR method="simple">0.00455</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.87787297</MEAN><ERROR method="simple">0.0049</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.87787907</MEAN><ERROR method="simple">0.00515</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.87787907</MEAN><ERROR method="simple">0.00524</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.87782247</MEAN><ERROR method="simple">0.00532</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.87782247</MEAN><ERROR method="simple">0.00533</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.87782247</MEAN><ERROR method="simple">0.00525</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.87782247</MEAN><ERROR method="simple">0.00506</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.87778854</MEAN><ERROR method="simple">0.00502</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 2.51327,-2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.586161</MEAN>
+        <ERROR converged="yes" method="binning">0.00374</ERROR>
+        <VARIANCE method="simple">0.327</VARIANCE>
+        <AUTOCORR method="binning">0.236</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.58616091</MEAN><ERROR method="simple">0.00308</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.58617766</MEAN><ERROR method="simple">0.0033</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.58620258</MEAN><ERROR method="simple">0.00347</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.58620258</MEAN><ERROR method="simple">0.00354</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.58616251</MEAN><ERROR method="simple">0.00352</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.58616251</MEAN><ERROR method="simple">0.00364</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.58616251</MEAN><ERROR method="simple">0.00375</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.58616251</MEAN><ERROR method="simple">0.00388</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.5863973</MEAN><ERROR method="simple">0.00374</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 2.51327,-1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.342052</MEAN>
+        <ERROR converged="yes" method="binning">0.00228</ERROR>
+        <VARIANCE method="simple">0.114</VARIANCE>
+        <AUTOCORR method="binning">0.287</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.342052</MEAN><ERROR method="simple">0.00182</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.34205719</MEAN><ERROR method="simple">0.002</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.34206206</MEAN><ERROR method="simple">0.00212</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.34206206</MEAN><ERROR method="simple">0.0022</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.34208691</MEAN><ERROR method="simple">0.00225</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.34208691</MEAN><ERROR method="simple">0.00234</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.34208691</MEAN><ERROR method="simple">0.00233</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.34208691</MEAN><ERROR method="simple">0.00221</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.34199577</MEAN><ERROR method="simple">0.00228</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 2.51327,-1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.231467</MEAN>
+        <ERROR converged="yes" method="binning">0.00155</ERROR>
+        <VARIANCE method="simple">0.0548</VARIANCE>
+        <AUTOCORR method="binning">0.257</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.23146706</MEAN><ERROR method="simple">0.00126</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.23146326</MEAN><ERROR method="simple">0.0014</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.23147488</MEAN><ERROR method="simple">0.0015</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.23147488</MEAN><ERROR method="simple">0.00156</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.23146354</MEAN><ERROR method="simple">0.00159</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.23146354</MEAN><ERROR method="simple">0.00159</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.23146354</MEAN><ERROR method="simple">0.00158</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.23146354</MEAN><ERROR method="simple">0.00156</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.23158844</MEAN><ERROR method="simple">0.00155</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 2.51327,-0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.178551</MEAN>
+        <ERROR converged="yes" method="binning">0.00113</ERROR>
+        <VARIANCE method="simple">0.0335</VARIANCE>
+        <AUTOCORR method="binning">0.153</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.17855144</MEAN><ERROR method="simple">0.000986</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17855189</MEAN><ERROR method="simple">0.00108</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.17855641</MEAN><ERROR method="simple">0.00116</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.17855641</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.17858168</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.17858168</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.17858168</MEAN><ERROR method="simple">0.00118</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.17858168</MEAN><ERROR method="simple">0.00115</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17856718</MEAN><ERROR method="simple">0.00113</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 3.14159,0 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.17324</MEAN>
+        <ERROR converged="yes" method="binning">0.0018</ERROR>
+        <VARIANCE method="simple">0.061</VARIANCE>
+        <AUTOCORR method="binning">0.411</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.1732381</MEAN><ERROR method="simple">0.00133</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17322455</MEAN><ERROR method="simple">0.00146</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.17323432</MEAN><ERROR method="simple">0.00155</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.17323432</MEAN><ERROR method="simple">0.00161</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.1732191</MEAN><ERROR method="simple">0.00164</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.1732191</MEAN><ERROR method="simple">0.0017</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.1732191</MEAN><ERROR method="simple">0.00171</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.1732191</MEAN><ERROR method="simple">0.00171</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17298741</MEAN><ERROR method="simple">0.0018</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 3.14159,0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.195287</MEAN>
+        <ERROR converged="yes" method="binning">0.0014</ERROR>
+        <VARIANCE method="simple">0.0398</VARIANCE>
+        <AUTOCORR method="binning">0.348</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.19528747</MEAN><ERROR method="simple">0.00107</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.19529282</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.19530082</MEAN><ERROR method="simple">0.00128</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.19530082</MEAN><ERROR method="simple">0.00135</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.19530263</MEAN><ERROR method="simple">0.0014</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.19530263</MEAN><ERROR method="simple">0.00141</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.19530263</MEAN><ERROR method="simple">0.00145</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.19530263</MEAN><ERROR method="simple">0.00147</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.19531479</MEAN><ERROR method="simple">0.0014</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 3.14159,1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.258364</MEAN>
+        <ERROR converged="yes" method="binning">0.00167</ERROR>
+        <VARIANCE method="simple">0.0679</VARIANCE>
+        <AUTOCORR method="binning">0.205</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.2583638</MEAN><ERROR method="simple">0.0014</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.25837079</MEAN><ERROR method="simple">0.00155</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.25837706</MEAN><ERROR method="simple">0.00166</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.25837706</MEAN><ERROR method="simple">0.00174</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.25840559</MEAN><ERROR method="simple">0.00178</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.25840559</MEAN><ERROR method="simple">0.00177</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.25840559</MEAN><ERROR method="simple">0.00176</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.25840559</MEAN><ERROR method="simple">0.00173</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.25832817</MEAN><ERROR method="simple">0.00167</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 3.14159,1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.403361</MEAN>
+        <ERROR converged="yes" method="binning">0.00263</ERROR>
+        <VARIANCE method="simple">0.16</VARIANCE>
+        <AUTOCORR method="binning">0.244</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.40336131</MEAN><ERROR method="simple">0.00215</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.40336231</MEAN><ERROR method="simple">0.00235</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.40335772</MEAN><ERROR method="simple">0.00249</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.40335772</MEAN><ERROR method="simple">0.00257</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.4033858</MEAN><ERROR method="simple">0.0026</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.4033858</MEAN><ERROR method="simple">0.00264</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.4033858</MEAN><ERROR method="simple">0.0027</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.4033858</MEAN><ERROR method="simple">0.00267</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.40318946</MEAN><ERROR method="simple">0.00263</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 3.14159,2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.874574</MEAN>
+        <ERROR converged="maybe" method="binning">0.00613</ERROR>
+        <VARIANCE method="simple">0.713</VARIANCE>
+        <AUTOCORR method="binning">0.406</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.8745741</MEAN><ERROR method="simple">0.00455</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.87459768</MEAN><ERROR method="simple">0.00488</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.87460726</MEAN><ERROR method="simple">0.0051</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.87460726</MEAN><ERROR method="simple">0.00525</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.8746439</MEAN><ERROR method="simple">0.00536</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.8746439</MEAN><ERROR method="simple">0.00536</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.8746439</MEAN><ERROR method="simple">0.00538</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.8746439</MEAN><ERROR method="simple">0.00542</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.87475456</MEAN><ERROR method="simple">0.00613</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 3.14159,3.14159 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">2.51792</MEAN>
+        <ERROR converged="yes" method="binning">0.0224</ERROR>
+        <VARIANCE method="simple">8.97</VARIANCE>
+        <AUTOCORR method="binning">0.461</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">2.5179189</MEAN><ERROR method="simple">0.0161</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">2.5179908</MEAN><ERROR method="simple">0.0179</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">2.5179718</MEAN><ERROR method="simple">0.0193</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">2.5179718</MEAN><ERROR method="simple">0.0201</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">2.5178532</MEAN><ERROR method="simple">0.021</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">2.5178532</MEAN><ERROR method="simple">0.0213</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">2.5178532</MEAN><ERROR method="simple">0.0218</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">2.5178532</MEAN><ERROR method="simple">0.0216</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">2.5182346</MEAN><ERROR method="simple">0.0224</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 3.14159,-2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.874574</MEAN>
+        <ERROR converged="maybe" method="binning">0.00613</ERROR>
+        <VARIANCE method="simple">0.713</VARIANCE>
+        <AUTOCORR method="binning">0.406</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.8745741</MEAN><ERROR method="simple">0.00455</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.87459768</MEAN><ERROR method="simple">0.00488</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.87460726</MEAN><ERROR method="simple">0.0051</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.87460726</MEAN><ERROR method="simple">0.00525</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.8746439</MEAN><ERROR method="simple">0.00536</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.8746439</MEAN><ERROR method="simple">0.00536</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.8746439</MEAN><ERROR method="simple">0.00538</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.8746439</MEAN><ERROR method="simple">0.00542</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.87475456</MEAN><ERROR method="simple">0.00613</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 3.14159,-1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.403361</MEAN>
+        <ERROR converged="yes" method="binning">0.00263</ERROR>
+        <VARIANCE method="simple">0.16</VARIANCE>
+        <AUTOCORR method="binning">0.244</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.40336131</MEAN><ERROR method="simple">0.00215</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.40336231</MEAN><ERROR method="simple">0.00235</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.40335772</MEAN><ERROR method="simple">0.00249</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.40335772</MEAN><ERROR method="simple">0.00257</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.4033858</MEAN><ERROR method="simple">0.0026</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.4033858</MEAN><ERROR method="simple">0.00264</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.4033858</MEAN><ERROR method="simple">0.0027</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.4033858</MEAN><ERROR method="simple">0.00267</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.40318946</MEAN><ERROR method="simple">0.00263</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 3.14159,-1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.258364</MEAN>
+        <ERROR converged="yes" method="binning">0.00167</ERROR>
+        <VARIANCE method="simple">0.0679</VARIANCE>
+        <AUTOCORR method="binning">0.205</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.2583638</MEAN><ERROR method="simple">0.0014</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.25837079</MEAN><ERROR method="simple">0.00155</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.25837706</MEAN><ERROR method="simple">0.00166</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.25837706</MEAN><ERROR method="simple">0.00174</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.25840559</MEAN><ERROR method="simple">0.00178</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.25840559</MEAN><ERROR method="simple">0.00177</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.25840559</MEAN><ERROR method="simple">0.00176</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.25840559</MEAN><ERROR method="simple">0.00173</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.25832817</MEAN><ERROR method="simple">0.00167</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( 3.14159,-0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.195287</MEAN>
+        <ERROR converged="yes" method="binning">0.0014</ERROR>
+        <VARIANCE method="simple">0.0398</VARIANCE>
+        <AUTOCORR method="binning">0.348</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.19528747</MEAN><ERROR method="simple">0.00107</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.19529282</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.19530082</MEAN><ERROR method="simple">0.00128</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.19530082</MEAN><ERROR method="simple">0.00135</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.19530263</MEAN><ERROR method="simple">0.0014</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.19530263</MEAN><ERROR method="simple">0.00141</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.19530263</MEAN><ERROR method="simple">0.00145</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.19530263</MEAN><ERROR method="simple">0.00147</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.19531479</MEAN><ERROR method="simple">0.0014</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -2.51327,0 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.162412</MEAN>
+        <ERROR converged="yes" method="binning">0.0012</ERROR>
+        <VARIANCE method="simple">0.0279</VARIANCE>
+        <AUTOCORR method="binning">0.394</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.16241206</MEAN><ERROR method="simple">0.000899</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.162414</MEAN><ERROR method="simple">0.001</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.16242192</MEAN><ERROR method="simple">0.00107</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.16242192</MEAN><ERROR method="simple">0.0011</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.16243131</MEAN><ERROR method="simple">0.00112</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.16243131</MEAN><ERROR method="simple">0.00115</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.16243131</MEAN><ERROR method="simple">0.00116</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.16243131</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.1622924</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -2.51327,0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.178551</MEAN>
+        <ERROR converged="yes" method="binning">0.00113</ERROR>
+        <VARIANCE method="simple">0.0335</VARIANCE>
+        <AUTOCORR method="binning">0.153</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.17855144</MEAN><ERROR method="simple">0.000986</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17855189</MEAN><ERROR method="simple">0.00108</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.17855641</MEAN><ERROR method="simple">0.00116</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.17855641</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.17858168</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.17858168</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.17858168</MEAN><ERROR method="simple">0.00118</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.17858168</MEAN><ERROR method="simple">0.00115</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17856718</MEAN><ERROR method="simple">0.00113</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -2.51327,1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.231467</MEAN>
+        <ERROR converged="yes" method="binning">0.00155</ERROR>
+        <VARIANCE method="simple">0.0548</VARIANCE>
+        <AUTOCORR method="binning">0.257</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.23146706</MEAN><ERROR method="simple">0.00126</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.23146326</MEAN><ERROR method="simple">0.0014</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.23147488</MEAN><ERROR method="simple">0.0015</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.23147488</MEAN><ERROR method="simple">0.00156</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.23146354</MEAN><ERROR method="simple">0.00159</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.23146354</MEAN><ERROR method="simple">0.00159</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.23146354</MEAN><ERROR method="simple">0.00158</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.23146354</MEAN><ERROR method="simple">0.00156</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.23158844</MEAN><ERROR method="simple">0.00155</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -2.51327,1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.342052</MEAN>
+        <ERROR converged="yes" method="binning">0.00228</ERROR>
+        <VARIANCE method="simple">0.114</VARIANCE>
+        <AUTOCORR method="binning">0.287</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.342052</MEAN><ERROR method="simple">0.00182</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.34205719</MEAN><ERROR method="simple">0.002</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.34206206</MEAN><ERROR method="simple">0.00212</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.34206206</MEAN><ERROR method="simple">0.0022</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.34208691</MEAN><ERROR method="simple">0.00225</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.34208691</MEAN><ERROR method="simple">0.00234</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.34208691</MEAN><ERROR method="simple">0.00233</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.34208691</MEAN><ERROR method="simple">0.00221</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.34199577</MEAN><ERROR method="simple">0.00228</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -2.51327,2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.586161</MEAN>
+        <ERROR converged="yes" method="binning">0.00374</ERROR>
+        <VARIANCE method="simple">0.327</VARIANCE>
+        <AUTOCORR method="binning">0.236</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.58616091</MEAN><ERROR method="simple">0.00308</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.58617766</MEAN><ERROR method="simple">0.0033</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.58620258</MEAN><ERROR method="simple">0.00347</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.58620258</MEAN><ERROR method="simple">0.00354</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.58616251</MEAN><ERROR method="simple">0.00352</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.58616251</MEAN><ERROR method="simple">0.00364</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.58616251</MEAN><ERROR method="simple">0.00375</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.58616251</MEAN><ERROR method="simple">0.00388</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.5863973</MEAN><ERROR method="simple">0.00374</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -2.51327,3.14159 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.877868</MEAN>
+        <ERROR converged="yes" method="binning">0.00502</ERROR>
+        <VARIANCE method="simple">0.715</VARIANCE>
+        <AUTOCORR method="binning">0.107</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.87786832</MEAN><ERROR method="simple">0.00455</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.87787297</MEAN><ERROR method="simple">0.0049</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.87787907</MEAN><ERROR method="simple">0.00515</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.87787907</MEAN><ERROR method="simple">0.00524</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.87782247</MEAN><ERROR method="simple">0.00532</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.87782247</MEAN><ERROR method="simple">0.00533</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.87782247</MEAN><ERROR method="simple">0.00525</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.87782247</MEAN><ERROR method="simple">0.00506</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.87778854</MEAN><ERROR method="simple">0.00502</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -2.51327,-2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.585722</MEAN>
+        <ERROR converged="yes" method="binning">0.00376</ERROR>
+        <VARIANCE method="simple">0.333</VARIANCE>
+        <AUTOCORR method="binning">0.231</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.58572239</MEAN><ERROR method="simple">0.00311</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.58567653</MEAN><ERROR method="simple">0.00336</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.58569991</MEAN><ERROR method="simple">0.00357</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.58569991</MEAN><ERROR method="simple">0.00368</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.5857108</MEAN><ERROR method="simple">0.00374</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.5857108</MEAN><ERROR method="simple">0.00372</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.5857108</MEAN><ERROR method="simple">0.00375</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.5857108</MEAN><ERROR method="simple">0.00378</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.58591018</MEAN><ERROR method="simple">0.00376</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -2.51327,-1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.336451</MEAN>
+        <ERROR converged="yes" method="binning">0.00225</ERROR>
+        <VARIANCE method="simple">0.113</VARIANCE>
+        <AUTOCORR method="binning">0.268</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.33645133</MEAN><ERROR method="simple">0.00181</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.33644641</MEAN><ERROR method="simple">0.00198</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.3364555</MEAN><ERROR method="simple">0.00211</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.3364555</MEAN><ERROR method="simple">0.00217</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.33646133</MEAN><ERROR method="simple">0.00222</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.33646133</MEAN><ERROR method="simple">0.00224</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.33646133</MEAN><ERROR method="simple">0.00225</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.33646133</MEAN><ERROR method="simple">0.00232</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.3366789</MEAN><ERROR method="simple">0.00225</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -2.51327,-1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.229526</MEAN>
+        <ERROR converged="yes" method="binning">0.00152</ERROR>
+        <VARIANCE method="simple">0.0538</VARIANCE>
+        <AUTOCORR method="binning">0.239</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.2295262</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.2295323</MEAN><ERROR method="simple">0.00138</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.22954315</MEAN><ERROR method="simple">0.00148</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.22954315</MEAN><ERROR method="simple">0.00152</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.2295473</MEAN><ERROR method="simple">0.00155</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.2295473</MEAN><ERROR method="simple">0.00154</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.2295473</MEAN><ERROR method="simple">0.0015</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.2295473</MEAN><ERROR method="simple">0.00147</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.22955437</MEAN><ERROR method="simple">0.00152</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -2.51327,-0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.179297</MEAN>
+        <ERROR converged="yes" method="binning">0.00125</ERROR>
+        <VARIANCE method="simple">0.033</VARIANCE>
+        <AUTOCORR method="binning">0.313</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.17929747</MEAN><ERROR method="simple">0.000979</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17929793</MEAN><ERROR method="simple">0.00108</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.1793024</MEAN><ERROR method="simple">0.00116</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.1793024</MEAN><ERROR method="simple">0.00119</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.17932403</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.17932403</MEAN><ERROR method="simple">0.00123</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.17932403</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.17932403</MEAN><ERROR method="simple">0.0013</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17935514</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.88496,0 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.126993</MEAN>
+        <ERROR converged="yes" method="binning">0.000838</ERROR>
+        <VARIANCE method="simple">0.017</VARIANCE>
+        <AUTOCORR method="binning">0.21</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.12699265</MEAN><ERROR method="simple">0.000703</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.12699517</MEAN><ERROR method="simple">0.000773</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.12699951</MEAN><ERROR method="simple">0.000832</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.12699951</MEAN><ERROR method="simple">0.000861</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.12701646</MEAN><ERROR method="simple">0.000883</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.12701646</MEAN><ERROR method="simple">0.000891</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.12701646</MEAN><ERROR method="simple">0.000883</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.12701646</MEAN><ERROR method="simple">0.000856</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.12705738</MEAN><ERROR method="simple">0.000838</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.88496,0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.139923</MEAN>
+        <ERROR converged="yes" method="binning">0.00095</ERROR>
+        <VARIANCE method="simple">0.02</VARIANCE>
+        <AUTOCORR method="binning">0.276</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.13992277</MEAN><ERROR method="simple">0.000763</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.13992382</MEAN><ERROR method="simple">0.000837</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.13992161</MEAN><ERROR method="simple">0.000893</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.13992161</MEAN><ERROR method="simple">0.000919</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.13992249</MEAN><ERROR method="simple">0.000931</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.13992249</MEAN><ERROR method="simple">0.00096</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.13992249</MEAN><ERROR method="simple">0.000949</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.13992249</MEAN><ERROR method="simple">0.000935</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.13994061</MEAN><ERROR method="simple">0.00095</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.88496,1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.177321</MEAN>
+        <ERROR converged="yes" method="binning">0.00133</ERROR>
+        <VARIANCE method="simple">0.0324</VARIANCE>
+        <AUTOCORR method="binning">0.441</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.17732052</MEAN><ERROR method="simple">0.00097</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17732254</MEAN><ERROR method="simple">0.00106</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.17732851</MEAN><ERROR method="simple">0.00113</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.17732851</MEAN><ERROR method="simple">0.00117</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.17734208</MEAN><ERROR method="simple">0.00119</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.17734208</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.17734208</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.17734208</MEAN><ERROR method="simple">0.0013</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17739731</MEAN><ERROR method="simple">0.00133</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.88496,1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.243981</MEAN>
+        <ERROR converged="yes" method="binning">0.00168</ERROR>
+        <VARIANCE method="simple">0.0593</VARIANCE>
+        <AUTOCORR method="binning">0.321</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.24398093</MEAN><ERROR method="simple">0.00131</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.24396689</MEAN><ERROR method="simple">0.00144</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.243971</MEAN><ERROR method="simple">0.00153</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.243971</MEAN><ERROR method="simple">0.00158</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.24399003</MEAN><ERROR method="simple">0.00163</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.24399003</MEAN><ERROR method="simple">0.00165</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.24399003</MEAN><ERROR method="simple">0.0017</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.24399003</MEAN><ERROR method="simple">0.00166</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.24395037</MEAN><ERROR method="simple">0.00168</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.88496,2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.337548</MEAN>
+        <ERROR converged="yes" method="binning">0.00219</ERROR>
+        <VARIANCE method="simple">0.114</VARIANCE>
+        <AUTOCORR method="binning">0.224</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.33754839</MEAN><ERROR method="simple">0.00182</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.33753747</MEAN><ERROR method="simple">0.00198</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.3375284</MEAN><ERROR method="simple">0.00211</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.3375284</MEAN><ERROR method="simple">0.00214</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.33757866</MEAN><ERROR method="simple">0.00219</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.33757866</MEAN><ERROR method="simple">0.00221</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.33757866</MEAN><ERROR method="simple">0.00211</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.33757866</MEAN><ERROR method="simple">0.0021</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.33748023</MEAN><ERROR method="simple">0.00219</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.88496,3.14159 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.399804</MEAN>
+        <ERROR converged="yes" method="binning">0.00258</ERROR>
+        <VARIANCE method="simple">0.159</VARIANCE>
+        <AUTOCORR method="binning">0.223</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.39980402</MEAN><ERROR method="simple">0.00215</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.39981286</MEAN><ERROR method="simple">0.00233</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.39975286</MEAN><ERROR method="simple">0.00248</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.39975286</MEAN><ERROR method="simple">0.00254</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.3996393</MEAN><ERROR method="simple">0.00263</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.3996393</MEAN><ERROR method="simple">0.00268</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.3996393</MEAN><ERROR method="simple">0.00264</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.3996393</MEAN><ERROR method="simple">0.00265</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.39943409</MEAN><ERROR method="simple">0.00258</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.88496,-2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.334359</MEAN>
+        <ERROR converged="yes" method="binning">0.00189</ERROR>
+        <VARIANCE method="simple">0.111</VARIANCE>
+        <AUTOCORR method="binning">0.0516</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.33435905</MEAN><ERROR method="simple">0.0018</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.33436865</MEAN><ERROR method="simple">0.00196</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.33438376</MEAN><ERROR method="simple">0.0021</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.33438376</MEAN><ERROR method="simple">0.00217</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.33441672</MEAN><ERROR method="simple">0.00221</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.33441672</MEAN><ERROR method="simple">0.00212</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.33441672</MEAN><ERROR method="simple">0.00209</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.33441672</MEAN><ERROR method="simple">0.00202</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.3343289</MEAN><ERROR method="simple">0.00189</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.88496,-1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.24171</MEAN>
+        <ERROR converged="yes" method="binning">0.00176</ERROR>
+        <VARIANCE method="simple">0.0586</VARIANCE>
+        <AUTOCORR method="binning">0.408</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.2417103</MEAN><ERROR method="simple">0.0013</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.24167871</MEAN><ERROR method="simple">0.00144</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.24168503</MEAN><ERROR method="simple">0.00153</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.24168503</MEAN><ERROR method="simple">0.00158</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.24165127</MEAN><ERROR method="simple">0.00162</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.24165127</MEAN><ERROR method="simple">0.00163</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.24165127</MEAN><ERROR method="simple">0.00164</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.24165127</MEAN><ERROR method="simple">0.00166</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.24174332</MEAN><ERROR method="simple">0.00176</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.88496,-1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.180878</MEAN>
+        <ERROR converged="yes" method="binning">0.00127</ERROR>
+        <VARIANCE method="simple">0.033</VARIANCE>
+        <AUTOCORR method="binning">0.337</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.1808779</MEAN><ERROR method="simple">0.000979</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.18088304</MEAN><ERROR method="simple">0.00108</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.18087449</MEAN><ERROR method="simple">0.00115</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.18087449</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.1808582</MEAN><ERROR method="simple">0.00123</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.1808582</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.1808582</MEAN><ERROR method="simple">0.00124</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.1808582</MEAN><ERROR method="simple">0.00124</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.18093196</MEAN><ERROR method="simple">0.00127</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.88496,-0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.140417</MEAN>
+        <ERROR converged="yes" method="binning">0.000873</ERROR>
+        <VARIANCE method="simple">0.0201</VARIANCE>
+        <AUTOCORR method="binning">0.154</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.14041723</MEAN><ERROR method="simple">0.000764</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.14041709</MEAN><ERROR method="simple">0.00084</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.14042507</MEAN><ERROR method="simple">0.000907</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.14042507</MEAN><ERROR method="simple">0.000946</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.14043254</MEAN><ERROR method="simple">0.000941</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.14043254</MEAN><ERROR method="simple">0.000943</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.14043254</MEAN><ERROR method="simple">0.000932</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.14043254</MEAN><ERROR method="simple">0.000888</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.14051396</MEAN><ERROR method="simple">0.000873</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.25664,0 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0889003</MEAN>
+        <ERROR converged="yes" method="binning">0.000628</ERROR>
+        <VARIANCE method="simple">0.00823</VARIANCE>
+        <AUTOCORR method="binning">0.324</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.088900258</MEAN><ERROR method="simple">0.000489</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.088897476</MEAN><ERROR method="simple">0.000532</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.088902416</MEAN><ERROR method="simple">0.000564</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.088902416</MEAN><ERROR method="simple">0.000586</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.088909014</MEAN><ERROR method="simple">0.000594</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.088909014</MEAN><ERROR method="simple">0.000595</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.088909014</MEAN><ERROR method="simple">0.000601</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.088909014</MEAN><ERROR method="simple">0.000608</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.088880352</MEAN><ERROR method="simple">0.000628</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.25664,0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.099774</MEAN>
+        <ERROR converged="yes" method="binning">0.000636</ERROR>
+        <VARIANCE method="simple">0.0103</VARIANCE>
+        <AUTOCORR method="binning">0.177</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.099774025</MEAN><ERROR method="simple">0.000547</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.099776515</MEAN><ERROR method="simple">0.000596</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.099771856</MEAN><ERROR method="simple">0.000633</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.099771856</MEAN><ERROR method="simple">0.000656</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.099775306</MEAN><ERROR method="simple">0.000669</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.099775306</MEAN><ERROR method="simple">0.000668</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.099775306</MEAN><ERROR method="simple">0.000641</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.099775306</MEAN><ERROR method="simple">0.000666</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.099801972</MEAN><ERROR method="simple">0.000636</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.25664,1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.131095</MEAN>
+        <ERROR converged="yes" method="binning">0.000953</ERROR>
+        <VARIANCE method="simple">0.0177</VARIANCE>
+        <AUTOCORR method="binning">0.384</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.13109514</MEAN><ERROR method="simple">0.000717</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.13109543</MEAN><ERROR method="simple">0.000787</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.13110172</MEAN><ERROR method="simple">0.000836</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.13110172</MEAN><ERROR method="simple">0.000871</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.13109034</MEAN><ERROR method="simple">0.000896</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.13109034</MEAN><ERROR method="simple">0.000877</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.13109034</MEAN><ERROR method="simple">0.000922</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.13109034</MEAN><ERROR method="simple">0.000904</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.13104615</MEAN><ERROR method="simple">0.000953</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.25664,1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.178935</MEAN>
+        <ERROR converged="yes" method="binning">0.00123</ERROR>
+        <VARIANCE method="simple">0.0324</VARIANCE>
+        <AUTOCORR method="binning">0.304</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.17893513</MEAN><ERROR method="simple">0.00097</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17894013</MEAN><ERROR method="simple">0.00107</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.17894272</MEAN><ERROR method="simple">0.00113</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.17894272</MEAN><ERROR method="simple">0.00118</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.17892587</MEAN><ERROR method="simple">0.00122</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.17892587</MEAN><ERROR method="simple">0.00123</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.17892587</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.17892587</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17886898</MEAN><ERROR method="simple">0.00123</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.25664,2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.229746</MEAN>
+        <ERROR converged="yes" method="binning">0.00159</ERROR>
+        <VARIANCE method="simple">0.0534</VARIANCE>
+        <AUTOCORR method="binning">0.316</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.22974564</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.2297433</MEAN><ERROR method="simple">0.00137</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.22975156</MEAN><ERROR method="simple">0.00145</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.22975156</MEAN><ERROR method="simple">0.00149</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.22972459</MEAN><ERROR method="simple">0.00151</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.22972459</MEAN><ERROR method="simple">0.00153</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.22972459</MEAN><ERROR method="simple">0.00151</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.22972459</MEAN><ERROR method="simple">0.00152</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.22959413</MEAN><ERROR method="simple">0.00159</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.25664,3.14159 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.253915</MEAN>
+        <ERROR converged="yes" method="binning">0.00182</ERROR>
+        <VARIANCE method="simple">0.0662</VARIANCE>
+        <AUTOCORR method="binning">0.366</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.25391492</MEAN><ERROR method="simple">0.00139</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.25392223</MEAN><ERROR method="simple">0.00153</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.25391158</MEAN><ERROR method="simple">0.00162</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.25391158</MEAN><ERROR method="simple">0.00168</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.25392561</MEAN><ERROR method="simple">0.0017</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.25392561</MEAN><ERROR method="simple">0.00173</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.25392561</MEAN><ERROR method="simple">0.0017</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.25392561</MEAN><ERROR method="simple">0.00176</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.25387512</MEAN><ERROR method="simple">0.00182</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.25664,-2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.231409</MEAN>
+        <ERROR converged="yes" method="binning">0.00145</ERROR>
+        <VARIANCE method="simple">0.0542</VARIANCE>
+        <AUTOCORR method="binning">0.172</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.23140928</MEAN><ERROR method="simple">0.00125</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.23140678</MEAN><ERROR method="simple">0.00138</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.2314145</MEAN><ERROR method="simple">0.00148</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.2314145</MEAN><ERROR method="simple">0.00152</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.23144016</MEAN><ERROR method="simple">0.00156</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.23144016</MEAN><ERROR method="simple">0.00157</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.23144016</MEAN><ERROR method="simple">0.00154</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.23144016</MEAN><ERROR method="simple">0.00149</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.23140071</MEAN><ERROR method="simple">0.00145</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.25664,-1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.177121</MEAN>
+        <ERROR converged="yes" method="binning">0.00114</ERROR>
+        <VARIANCE method="simple">0.0325</VARIANCE>
+        <AUTOCORR method="binning">0.191</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.17712067</MEAN><ERROR method="simple">0.000972</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17712562</MEAN><ERROR method="simple">0.00107</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.17713256</MEAN><ERROR method="simple">0.00114</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.17713256</MEAN><ERROR method="simple">0.00119</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.17714524</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.17714524</MEAN><ERROR method="simple">0.00123</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.17714524</MEAN><ERROR method="simple">0.00122</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.17714524</MEAN><ERROR method="simple">0.0012</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17709717</MEAN><ERROR method="simple">0.00114</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.25664,-1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.130224</MEAN>
+        <ERROR converged="yes" method="binning">0.000806</ERROR>
+        <VARIANCE method="simple">0.0172</VARIANCE>
+        <AUTOCORR method="binning">0.151</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.13022425</MEAN><ERROR method="simple">0.000707</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.13022034</MEAN><ERROR method="simple">0.000771</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.13021792</MEAN><ERROR method="simple">0.000814</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.13021792</MEAN><ERROR method="simple">0.000834</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.13022495</MEAN><ERROR method="simple">0.000847</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.13022495</MEAN><ERROR method="simple">0.000841</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.13022495</MEAN><ERROR method="simple">0.000819</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.13022495</MEAN><ERROR method="simple">0.000812</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.13031329</MEAN><ERROR method="simple">0.000806</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -1.25664,-0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0992702</MEAN>
+        <ERROR converged="yes" method="binning">0.000636</ERROR>
+        <VARIANCE method="simple">0.0102</VARIANCE>
+        <AUTOCORR method="binning">0.182</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.099270186</MEAN><ERROR method="simple">0.000545</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.099272873</MEAN><ERROR method="simple">0.00059</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.099272729</MEAN><ERROR method="simple">0.000619</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.099272729</MEAN><ERROR method="simple">0.000639</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.099280135</MEAN><ERROR method="simple">0.000656</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.099280135</MEAN><ERROR method="simple">0.000654</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.099280135</MEAN><ERROR method="simple">0.000666</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.099280135</MEAN><ERROR method="simple">0.000633</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.099279011</MEAN><ERROR method="simple">0.000636</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -0.628319,0 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0581344</MEAN>
+        <ERROR converged="yes" method="binning">0.00042</ERROR>
+        <VARIANCE method="simple">0.00352</VARIANCE>
+        <AUTOCORR method="binning">0.364</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.058134374</MEAN><ERROR method="simple">0.00032</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.058134901</MEAN><ERROR method="simple">0.000341</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.058137833</MEAN><ERROR method="simple">0.000357</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.058137833</MEAN><ERROR method="simple">0.000365</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.058140083</MEAN><ERROR method="simple">0.000373</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.058140083</MEAN><ERROR method="simple">0.000383</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.058140083</MEAN><ERROR method="simple">0.000388</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.058140083</MEAN><ERROR method="simple">0.000389</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.05814172</MEAN><ERROR method="simple">0.00042</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -0.628319,0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0692731</MEAN>
+        <ERROR converged="yes" method="binning">0.000465</ERROR>
+        <VARIANCE method="simple">0.00493</VARIANCE>
+        <AUTOCORR method="binning">0.255</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.069273144</MEAN><ERROR method="simple">0.000378</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.069266371</MEAN><ERROR method="simple">0.000402</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.069269421</MEAN><ERROR method="simple">0.000422</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.069269421</MEAN><ERROR method="simple">0.000436</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.069270596</MEAN><ERROR method="simple">0.000446</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.069270596</MEAN><ERROR method="simple">0.000455</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.069270596</MEAN><ERROR method="simple">0.000446</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.069270596</MEAN><ERROR method="simple">0.000428</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.069256254</MEAN><ERROR method="simple">0.000465</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -0.628319,1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.100074</MEAN>
+        <ERROR converged="yes" method="binning">0.000613</ERROR>
+        <VARIANCE method="simple">0.0104</VARIANCE>
+        <AUTOCORR method="binning">0.123</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.10007407</MEAN><ERROR method="simple">0.000549</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.10007622</MEAN><ERROR method="simple">0.000593</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.10007123</MEAN><ERROR method="simple">0.000628</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.10007123</MEAN><ERROR method="simple">0.00064</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.10007184</MEAN><ERROR method="simple">0.000644</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.10007184</MEAN><ERROR method="simple">0.000638</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.10007184</MEAN><ERROR method="simple">0.000675</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.10007184</MEAN><ERROR method="simple">0.00066</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.10013559</MEAN><ERROR method="simple">0.000613</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -0.628319,1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.139666</MEAN>
+        <ERROR converged="yes" method="binning">0.000982</ERROR>
+        <VARIANCE method="simple">0.0204</VARIANCE>
+        <AUTOCORR method="binning">0.314</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.1396661</MEAN><ERROR method="simple">0.00077</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.13966334</MEAN><ERROR method="simple">0.000844</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.13966349</MEAN><ERROR method="simple">0.000899</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.13966349</MEAN><ERROR method="simple">0.000929</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.13967143</MEAN><ERROR method="simple">0.00094</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.13967143</MEAN><ERROR method="simple">0.000934</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.13967143</MEAN><ERROR method="simple">0.00095</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.13967143</MEAN><ERROR method="simple">0.000963</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.13958574</MEAN><ERROR method="simple">0.000982</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -0.628319,2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.179226</MEAN>
+        <ERROR converged="yes" method="binning">0.00132</ERROR>
+        <VARIANCE method="simple">0.0336</VARIANCE>
+        <AUTOCORR method="binning">0.394</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.17922595</MEAN><ERROR method="simple">0.000987</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17921309</MEAN><ERROR method="simple">0.00109</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.17919385</MEAN><ERROR method="simple">0.00117</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.17919385</MEAN><ERROR method="simple">0.00123</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.1792059</MEAN><ERROR method="simple">0.00126</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.1792059</MEAN><ERROR method="simple">0.00126</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.1792059</MEAN><ERROR method="simple">0.00127</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.1792059</MEAN><ERROR method="simple">0.00128</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17920746</MEAN><ERROR method="simple">0.00132</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -0.628319,3.14159 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.194689</MEAN>
+        <ERROR converged="yes" method="binning">0.00134</ERROR>
+        <VARIANCE method="simple">0.0395</VARIANCE>
+        <AUTOCORR method="binning">0.277</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.19468862</MEAN><ERROR method="simple">0.00107</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.19468891</MEAN><ERROR method="simple">0.00119</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.19465335</MEAN><ERROR method="simple">0.00129</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.19465335</MEAN><ERROR method="simple">0.00134</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.1946506</MEAN><ERROR method="simple">0.00136</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.1946506</MEAN><ERROR method="simple">0.00139</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.1946506</MEAN><ERROR method="simple">0.0014</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.1946506</MEAN><ERROR method="simple">0.00138</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.19456049</MEAN><ERROR method="simple">0.00134</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -0.628319,-2.51327 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.178209</MEAN>
+        <ERROR converged="yes" method="binning">0.00129</ERROR>
+        <VARIANCE method="simple">0.0335</VARIANCE>
+        <AUTOCORR method="binning">0.353</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.178209</MEAN><ERROR method="simple">0.000987</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.17821342</MEAN><ERROR method="simple">0.00109</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.178219</MEAN><ERROR method="simple">0.00117</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.178219</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.17820924</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.17820924</MEAN><ERROR method="simple">0.00122</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.17820924</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.17820924</MEAN><ERROR method="simple">0.00121</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.17824248</MEAN><ERROR method="simple">0.00129</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -0.628319,-1.88496 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.139433</MEAN>
+        <ERROR converged="yes" method="binning">0.000926</ERROR>
+        <VARIANCE method="simple">0.0199</VARIANCE>
+        <AUTOCORR method="binning">0.242</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.13943327</MEAN><ERROR method="simple">0.00076</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.13943365</MEAN><ERROR method="simple">0.000835</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.13942363</MEAN><ERROR method="simple">0.000889</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.13942363</MEAN><ERROR method="simple">0.000915</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.1394075</MEAN><ERROR method="simple">0.00093</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.1394075</MEAN><ERROR method="simple">0.000935</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.1394075</MEAN><ERROR method="simple">0.000948</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.1394075</MEAN><ERROR method="simple">0.000981</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.13941719</MEAN><ERROR method="simple">0.000926</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -0.628319,-1.25664 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0981782</MEAN>
+        <ERROR converged="yes" method="binning">0.000612</ERROR>
+        <VARIANCE method="simple">0.01</VARIANCE>
+        <AUTOCORR method="binning">0.142</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.09817817</MEAN><ERROR method="simple">0.00054</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.098173286</MEAN><ERROR method="simple">0.000587</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.098149011</MEAN><ERROR method="simple">0.000616</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.098149011</MEAN><ERROR method="simple">0.00063</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.098157288</MEAN><ERROR method="simple">0.000637</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.098157288</MEAN><ERROR method="simple">0.00065</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.098157288</MEAN><ERROR method="simple">0.00064</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.098157288</MEAN><ERROR method="simple">0.000612</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.098157597</MEAN><ERROR method="simple">0.000612</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+      <SCALAR_AVERAGE indexvalue="( -0.628319,-0.628319 )">
+        <COUNT>34443</COUNT>
+        <MEAN method="simple">0.0697785</MEAN>
+        <ERROR converged="yes" method="binning">0.000492</ERROR>
+        <VARIANCE method="simple">0.00505</VARIANCE>
+        <AUTOCORR method="binning">0.327</AUTOCORR>
+        <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.069778534</MEAN><ERROR method="simple">0.000383</ERROR></BINNED>
+        <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.069777654</MEAN><ERROR method="simple">0.000411</ERROR></BINNED>
+        <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.069779837</MEAN><ERROR method="simple">0.000434</ERROR></BINNED>
+        <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.069779837</MEAN><ERROR method="simple">0.000451</ERROR></BINNED>
+        <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.069778218</MEAN><ERROR method="simple">0.00046</ERROR></BINNED>
+        <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.069778218</MEAN><ERROR method="simple">0.000479</ERROR></BINNED>
+        <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.069778218</MEAN><ERROR method="simple">0.000495</ERROR></BINNED>
+        <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.069778218</MEAN><ERROR method="simple">0.000472</ERROR></BINNED>
+        <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.069791489</MEAN><ERROR method="simple">0.000492</ERROR></BINNED>
+      </SCALAR_AVERAGE>
+    </VECTOR_AVERAGE>
+    <SCALAR_AVERAGE name="Staggered Magnetization">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">-0.0553</MEAN>
+      <ERROR converged="yes" method="binning">0.0964</ERROR>
+      <VARIANCE method="simple">252</VARIANCE>
+      <AUTOCORR method="binning">0.135</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">-0.0553</MEAN><ERROR method="simple">0.0855</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">-0.0552</MEAN><ERROR method="simple">0.0899</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">-0.0543</MEAN><ERROR method="simple">0.093</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">-0.0543</MEAN><ERROR method="simple">0.0945</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">-0.0543</MEAN><ERROR method="simple">0.0965</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">-0.0543</MEAN><ERROR method="simple">0.0975</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">-0.0543</MEAN><ERROR method="simple">0.0947</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">-0.0543</MEAN><ERROR method="simple">0.0948</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">-0.0592</MEAN><ERROR method="simple">0.0964</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Staggered Magnetization Density">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">-0.000553</MEAN>
+      <ERROR converged="yes" method="binning">0.000964</ERROR>
+      <VARIANCE method="simple">0.0252</VARIANCE>
+      <AUTOCORR method="binning">0.135</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">-0.000553</MEAN><ERROR method="simple">0.000855</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">-0.000552</MEAN><ERROR method="simple">0.000899</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">-0.000543</MEAN><ERROR method="simple">0.00093</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">-0.000543</MEAN><ERROR method="simple">0.000945</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">-0.000543</MEAN><ERROR method="simple">0.000965</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">-0.000543</MEAN><ERROR method="simple">0.000975</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">-0.000543</MEAN><ERROR method="simple">0.000947</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">-0.000543</MEAN><ERROR method="simple">0.000948</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">-0.000592</MEAN><ERROR method="simple">0.000964</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Staggered Magnetization Density^2">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">0.0251792</MEAN>
+      <ERROR converged="yes" method="binning">0.000224</ERROR>
+      <VARIANCE method="simple">0.000897</VARIANCE>
+      <AUTOCORR method="binning">0.461</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.0251792</MEAN><ERROR method="simple">0.000161</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.0251799</MEAN><ERROR method="simple">0.000179</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.0251797</MEAN><ERROR method="simple">0.000193</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.0251797</MEAN><ERROR method="simple">0.000201</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.0251785</MEAN><ERROR method="simple">0.00021</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.0251785</MEAN><ERROR method="simple">0.000213</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.0251785</MEAN><ERROR method="simple">0.000218</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.0251785</MEAN><ERROR method="simple">0.000216</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.0251823</MEAN><ERROR method="simple">0.000224</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Staggered Magnetization Density^4">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">0.0015312</MEAN>
+      <ERROR converged="yes" method="binning">2.36e-05</ERROR>
+      <VARIANCE method="simple">1.15e-05</VARIANCE>
+      <AUTOCORR method="binning">0.337</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.0015312</MEAN><ERROR method="simple">1.83e-05</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.0015313</MEAN><ERROR method="simple">2.01e-05</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.0015313</MEAN><ERROR method="simple">2.16e-05</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.0015313</MEAN><ERROR method="simple">2.22e-05</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.0015314</MEAN><ERROR method="simple">2.33e-05</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.0015314</MEAN><ERROR method="simple">2.32e-05</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.0015314</MEAN><ERROR method="simple">2.37e-05</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.0015314</MEAN><ERROR method="simple">2.23e-05</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.0015311</MEAN><ERROR method="simple">2.36e-05</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Staggered Magnetization^2">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">251.792</MEAN>
+      <ERROR converged="yes" method="binning">2.24</ERROR>
+      <VARIANCE method="simple">8.97e+04</VARIANCE>
+      <AUTOCORR method="binning">0.461</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">251.792</MEAN><ERROR method="simple">1.61</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">251.799</MEAN><ERROR method="simple">1.79</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">251.797</MEAN><ERROR method="simple">1.93</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">251.797</MEAN><ERROR method="simple">2.01</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">251.785</MEAN><ERROR method="simple">2.1</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">251.785</MEAN><ERROR method="simple">2.13</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">251.785</MEAN><ERROR method="simple">2.18</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">251.785</MEAN><ERROR method="simple">2.16</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">251.823</MEAN><ERROR method="simple">2.24</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Staggered Magnetization^4">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">1.5312e+05</MEAN>
+      <ERROR converged="yes" method="binning">2.36e+03</ERROR>
+      <VARIANCE method="simple">1.15e+11</VARIANCE>
+      <AUTOCORR method="binning">0.337</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">1.5312e+05</MEAN><ERROR method="simple">1.83e+03</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">1.5313e+05</MEAN><ERROR method="simple">2.01e+03</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">1.5313e+05</MEAN><ERROR method="simple">2.16e+03</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">1.5313e+05</MEAN><ERROR method="simple">2.22e+03</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">1.5314e+05</MEAN><ERROR method="simple">2.33e+03</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">1.5314e+05</MEAN><ERROR method="simple">2.32e+03</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">1.5314e+05</MEAN><ERROR method="simple">2.37e+03</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">1.5314e+05</MEAN><ERROR method="simple">2.23e+03</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">1.5311e+05</MEAN><ERROR method="simple">2.36e+03</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Stiffness">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">0.023166</MEAN>
+      <ERROR converged="yes" method="binning">0.000778</ERROR>
+      <VARIANCE method="simple">0.0075</VARIANCE>
+      <AUTOCORR method="binning">0.889</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.023166</MEAN><ERROR method="simple">0.000467</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.023167</MEAN><ERROR method="simple">0.000574</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.023168</MEAN><ERROR method="simple">0.000679</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.023168</MEAN><ERROR method="simple">0.000767</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.023173</MEAN><ERROR method="simple">0.000804</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.023173</MEAN><ERROR method="simple">0.000825</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.023173</MEAN><ERROR method="simple">0.000825</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.023173</MEAN><ERROR method="simple">0.00084</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.023227</MEAN><ERROR method="simple">0.000778</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="Susceptibility">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">0.0827286</MEAN>
+      <ERROR converged="yes" method="binning">0.000751</ERROR>
+      <VARIANCE method="simple">0.0141</VARIANCE>
+      <AUTOCORR method="binning">0.187</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.0827286</MEAN><ERROR method="simple">0.000641</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.082729</MEAN><ERROR method="simple">0.000671</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.0827271</MEAN><ERROR method="simple">0.000693</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.0827271</MEAN><ERROR method="simple">0.000717</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.0827241</MEAN><ERROR method="simple">0.000728</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.0827241</MEAN><ERROR method="simple">0.000721</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.0827241</MEAN><ERROR method="simple">0.000735</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.0827241</MEAN><ERROR method="simple">0.000712</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.0827446</MEAN><ERROR method="simple">0.000751</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="n">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">190.2218</MEAN>
+      <ERROR converged="yes" method="binning">0.162</ERROR>
+      <VARIANCE method="simple">237</VARIANCE>
+      <AUTOCORR method="binning">1.42</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">190.2218</MEAN><ERROR method="simple">0.0829</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">190.2215</MEAN><ERROR method="simple">0.101</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">190.2211</MEAN><ERROR method="simple">0.121</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">190.2211</MEAN><ERROR method="simple">0.138</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">190.2217</MEAN><ERROR method="simple">0.149</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">190.2217</MEAN><ERROR method="simple">0.156</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">190.2217</MEAN><ERROR method="simple">0.162</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">190.2217</MEAN><ERROR method="simple">0.169</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">190.2293</MEAN><ERROR method="simple">0.162</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="n^2">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">36421.3</MEAN>
+      <ERROR converged="yes" method="binning">62.4</ERROR>
+      <VARIANCE method="simple">3.46e+07</VARIANCE>
+      <AUTOCORR method="binning">1.44</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">36421.29</MEAN><ERROR method="simple">31.7</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">36421.2</MEAN><ERROR method="simple">38.7</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">36421</MEAN><ERROR method="simple">46.2</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">36421</MEAN><ERROR method="simple">53</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">36421.3</MEAN><ERROR method="simple">57.2</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">36421.3</MEAN><ERROR method="simple">59.9</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">36421.3</MEAN><ERROR method="simple">62.3</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">36421.3</MEAN><ERROR method="simple">65</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">36424.2</MEAN><ERROR method="simple">62.4</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="n^3">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">7.01853e+06</MEAN>
+      <ERROR converged="yes" method="binning">1.81e+04</ERROR>
+      <VARIANCE method="simple">2.9e+12</VARIANCE>
+      <AUTOCORR method="binning">1.46</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">7.01853e+06</MEAN><ERROR method="simple">9.17e+03</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">7.01849e+06</MEAN><ERROR method="simple">1.12e+04</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">7.01846e+06</MEAN><ERROR method="simple">1.34e+04</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">7.01846e+06</MEAN><ERROR method="simple">1.54e+04</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">7.01854e+06</MEAN><ERROR method="simple">1.66e+04</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">7.01854e+06</MEAN><ERROR method="simple">1.74e+04</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">7.01854e+06</MEAN><ERROR method="simple">1.81e+04</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">7.01854e+06</MEAN><ERROR method="simple">1.89e+04</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">7.0194e+06</MEAN><ERROR method="simple">1.81e+04</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="|Magnetization Density|">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">0.0168464</MEAN>
+      <ERROR converged="yes" method="binning">8.89e-05</ERROR>
+      <VARIANCE method="simple">0.000182</VARIANCE>
+      <AUTOCORR method="binning">0.249</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">0.0168464</MEAN><ERROR method="simple">7.26e-05</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">0.0168463</MEAN><ERROR method="simple">7.63e-05</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">0.0168458</MEAN><ERROR method="simple">7.85e-05</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">0.0168458</MEAN><ERROR method="simple">8.11e-05</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">0.0168454</MEAN><ERROR method="simple">8.21e-05</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">0.0168454</MEAN><ERROR method="simple">8.08e-05</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">0.0168454</MEAN><ERROR method="simple">8.44e-05</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">0.0168454</MEAN><ERROR method="simple">8.21e-05</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">0.0168458</MEAN><ERROR method="simple">8.89e-05</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+    <SCALAR_AVERAGE name="|Magnetization|">
+      <COUNT>34443</COUNT>
+      <MEAN method="simple">1.68464</MEAN>
+      <ERROR converged="yes" method="binning">0.00889</ERROR>
+      <VARIANCE method="simple">1.82</VARIANCE>
+      <AUTOCORR method="binning">0.249</AUTOCORR>
+      <BINNED size="1"><COUNT>34443</COUNT><MEAN method="simple">1.68464</MEAN><ERROR method="simple">0.00726</ERROR></BINNED>
+      <BINNED size="2"><COUNT>17221</COUNT><MEAN method="simple">1.68463</MEAN><ERROR method="simple">0.00763</ERROR></BINNED>
+      <BINNED size="4"><COUNT>8610</COUNT><MEAN method="simple">1.68458</MEAN><ERROR method="simple">0.00785</ERROR></BINNED>
+      <BINNED size="8"><COUNT>4305</COUNT><MEAN method="simple">1.68458</MEAN><ERROR method="simple">0.00811</ERROR></BINNED>
+      <BINNED size="16"><COUNT>2152</COUNT><MEAN method="simple">1.68454</MEAN><ERROR method="simple">0.00821</ERROR></BINNED>
+      <BINNED size="32"><COUNT>1076</COUNT><MEAN method="simple">1.68454</MEAN><ERROR method="simple">0.00808</ERROR></BINNED>
+      <BINNED size="64"><COUNT>538</COUNT><MEAN method="simple">1.68454</MEAN><ERROR method="simple">0.00844</ERROR></BINNED>
+      <BINNED size="128"><COUNT>269</COUNT><MEAN method="simple">1.68454</MEAN><ERROR method="simple">0.00821</ERROR></BINNED>
+      <BINNED size="256"><COUNT>134</COUNT><MEAN method="simple">1.68458</MEAN><ERROR method="simple">0.00889</ERROR></BINNED>
+    </SCALAR_AVERAGE>
+  </AVERAGES>
+  <MCRUN>
+    <EXECUTED phase="equilibrating">
+      <FROM>2018-Feb-08 11:08:22</FROM>
+      <TO>2018-Feb-08 11:08:22</TO>
+      <MACHINE><NAME>alex-HP</NAME></MACHINE>
+    </EXECUTED>
+    <EXECUTED phase="running">
+      <FROM>2018-Feb-08 11:08:22</FROM>
+      <TO>2018-Feb-08 11:09:24</TO>
+      <MACHINE><NAME>alex-HP</NAME></MACHINE>
+    </EXECUTED>
+    <CHECKPOINT format="osiris" file="parm_periodic_bound.task4.out.run1"/>
+    <CHECKPOINT format="hdf5" file="parm_periodic_bound.task4.out.run1.h5"/>
+  </MCRUN>
+</SIMULATION>
