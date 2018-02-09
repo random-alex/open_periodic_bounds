@@ -6,7 +6,7 @@ require(rhdf5)
 require(multidplyr)
 require(tidyverse)
 
-dir <- 'data/a lot of temp/'
+dir <- 'data/a lot of temp and spin cor/'
 
 
 
@@ -18,6 +18,21 @@ my_prep_pairs <- function(pairs) {
     .[c(3,4)] %>% 
     str_c(sep = '_',collapse = '_')
 }
+
+my_read_matrix_param <- function(fol) {
+  data1 <- h5read(fol,'simulation')
+  df <- tibble(pairs = data1$results$`Spin Correlations`$labels,
+               mean = data1$results$`Spin Correlations`$mean$value,
+               error = data1$results$`Spin Correlations`$mean$error) %>% 
+    rowwise() %>% 
+    mutate(pairs = my_prep_pairs(pairs)) %>% 
+    ungroup() %>% 
+    separate( 'pairs',c('x','y')) %>% 
+    filter(x == '0' & y == '1')
+  return(df)
+}
+
+
 my_prep_plot <- function(df,t) {
   temp1 <- df %>% 
     filter(temp == t) %>% 
@@ -38,25 +53,43 @@ my_read_sim <- function(fol) {
     mutate(value = map(value,enframe,name = 'parameter')) 
   return(data1)
 }
-my_read <- function(dir,cl = 3,pattern = '.out.h5'){
+my_read <- function(dir,cl = 3,pattern = '.out.h5', flag = 'standart'){
   
   cluster <- create_cluster(cl)
+  if (flag == 'standart'){
+    df_data <- tibble(dir = list.files(dir,pattern = pattern,full.names = T),
+                      id = rep(1:cl,length.out = NROW(dir))) %>% 
+      partition(id,cluster = cluster) %>% 
+      cluster_library(c('rhdf5','tidyverse')) %>% 
+      cluster_assign_value('my_read_sim',my_read_sim) %>% 
+      mutate(results = map(dir,my_read_sim))  %>% 
+      collect() %>% 
+      ungroup() %>% 
+      select(-id) %>% 
+      unnest(results)  
+    
+  }
+  else{
+    df_data <- tibble(dir = list.files(dir,pattern = pattern,full.names = T),
+                      id = rep(1:cl,length.out = NROW(dir))) %>% 
+      partition(id,cluster = cluster) %>% 
+      cluster_library(c('rhdf5','tidyverse')) %>% 
+      cluster_assign_value('my_read_matrix_param',my_read_matrix_param) %>% 
+      cluster_assign_value('my_prep_pairs',my_prep_pairs) %>% 
+      mutate(results = map(dir,my_read_matrix_param))  %>% 
+      collect() %>% 
+      ungroup() %>% 
+      select(-id) %>% 
+      unnest(results)  
+  }
   
-  df_data <- tibble(dir = list.files(dir,pattern = pattern,full.names = T),
-                    id = rep(1:cl,length.out = NROW(dir))) %>% 
-    partition(id,cluster = cluster) %>% 
-    cluster_library(c('rhdf5','tidyverse')) %>% 
-    cluster_assign_value('my_read_sim',my_read_sim) %>% 
-    mutate(results = map(dir,my_read_sim))  %>% 
-    collect() %>% 
-    ungroup() %>% 
-    select(-id) %>% 
-    unnest(results)  
+  
   parallel::stopCluster(cluster)
   return(df_data)
 }
 
 
+my_read_matrix_param(df_init_par$dir[1])
 
 # read files --------------------------------------------------------------
 
@@ -68,14 +101,14 @@ df_init_par <- tibble(dir = list.files(dir,pattern = '.out.h5',full.names = T)) 
   spread(parameter,value)
 
 
-df_data <- my_read(dir)
+df_data <- my_read(dir,flag = 'matrix')
 
 
 # work with staggered magnetization ---------------------------------------
 
 
 df_data1 <- df_data %>% 
-  filter(type %in% c("Staggered Magnetization^2")) %>% 
+  filter(type %in% c("Staggered Magnetization Density^2")) %>% 
   unnest(value) %>% 
   filter(parameter %in% c('mean')) %>% 
   select(-c(parameter) ) %>% 
@@ -96,14 +129,13 @@ df %>%
 
 df %>%
   mutate(`T` = as.numeric(`T`)) %>% 
-  # filter(!L %in% c('50','40','30','28','22')) %>% 
-  # group_by(L,`T`) %>% 
-  mutate(value = value/(as.numeric(as.character(L))^2)) %>%
-  ggplot(aes(`T`,value,col = L)) +
+  # mutate(value = value/(as.numeric(as.character(L))^2)) %>%
+  ggplot(aes(`T`,value,col = LATTICE)) +
   geom_line() +
-  # geom_pointrange(aes(ymax = value + error,ymin = value - error)) +
+  geom_pointrange(aes(ymax = value + error,ymin = value - error)) +
   geom_point(aes(shape = error_convergence),size = 3) +
-  facet_grid(type ~ LATTICE,scales = 'free') +
+  ylab("Staggered Magnetization Density^2") +
+  facet_grid(type ~ L,scales = 'free',labeller = label_both) +
   theme_bw()
 
 
