@@ -12,27 +12,20 @@ dir <- 'data/a lot of temp and spin cor/'
 
 # functions ---------------------------------------------------------------
 
-my_prep_pairs <- function(pairs) {
-  str_extract_all(pairs,'[0-9]',simplify = F) %>%
-    unlist() %>% 
-    .[c(3,4)] %>% 
-    str_c(sep = '_',collapse = '_')
-}
-
 my_read_matrix_param <- function(fol) {
   data1 <- h5read(fol,'simulation')
   df <- tibble(pairs = data1$results$`Spin Correlations`$labels,
                mean = data1$results$`Spin Correlations`$mean$value,
-               error = data1$results$`Spin Correlations`$mean$error) %>% 
+               error = data1$results$`Spin Correlations`$mean$error,
+               error_convergence = data1$results$`Spin Correlations`$mean$error_convergence) %>% 
     rowwise() %>% 
-    mutate(pairs = my_prep_pairs(pairs)) %>% 
+    mutate(pairs = str_replace_all(pairs,'\\( | \\)',''),
+           pairs = str_replace_all(pairs,' \\-\\- ',',')) %>% 
     ungroup() %>% 
-    separate( 'pairs',c('x','y')) %>% 
-    filter(x == '0' & y == '1')
+    separate( 'pairs',c('x1','y1', 'x2','y2')) %>% 
+    filter(x1 == '0' & y1 == '0' & x2 == '0' & y2 == '1')
   return(df)
 }
-
-
 my_prep_plot <- function(df,t) {
   temp1 <- df %>% 
     filter(temp == t) %>% 
@@ -75,7 +68,6 @@ my_read <- function(dir,cl = 3,pattern = '.out.h5', flag = 'standart'){
       partition(id,cluster = cluster) %>% 
       cluster_library(c('rhdf5','tidyverse')) %>% 
       cluster_assign_value('my_read_matrix_param',my_read_matrix_param) %>% 
-      cluster_assign_value('my_prep_pairs',my_prep_pairs) %>% 
       mutate(results = map(dir,my_read_matrix_param))  %>% 
       collect() %>% 
       ungroup() %>% 
@@ -88,8 +80,6 @@ my_read <- function(dir,cl = 3,pattern = '.out.h5', flag = 'standart'){
   return(df_data)
 }
 
-
-my_read_matrix_param(df_init_par$dir[1])
 
 # read files --------------------------------------------------------------
 
@@ -146,33 +136,24 @@ ss <- df %>%
 
 
 
-# work with energy --------------------------------------------------------
+# work with Spin correlations --------------------------------------------------------
 
-
-df_data1 <- df_data %>% 
-  filter(type %in% c('Energy')) %>% 
-  unnest(value) %>% 
-  filter(parameter %in% c('mean')) %>% 
-  select(-c(parameter) ) %>% 
-  mutate(res = map(value,enframe)) %>% 
-  unnest(res) %>% 
-  unnest(value) %>% 
-  spread(name,value)
-
-df <- left_join(df_init_par,df_data1) %>% 
+df <- left_join(df_init_par,df_data) %>% 
   select(-dir) %>% 
   arrange(as.numeric(L),as.numeric(T)) %>% 
   mutate(L = as_factor(L),
-         error_convergence = as.factor(error_convergence))
+         error_convergence = as.factor(error_convergence),
+         type = 'Spin Correlations',
+         value = -mean)
 
 df %>%
   mutate(`T` = as.numeric(`T`)) %>% 
-  group_by(L,`T`) %>% 
   ggplot(aes(`T`,value,col = LATTICE)) +
   geom_line() +
   geom_pointrange(aes(ymax = value + error,ymin = value - error)) +
   geom_point(aes(shape = error_convergence),size = 3) +
   facet_grid(L ~ type,scales = 'free') +
+  ylab('-Значения коррелятора на ближайших узлах') +
   theme_bw()
 
 
