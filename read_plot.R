@@ -94,6 +94,7 @@ df_init_par <- tibble(dir = list.files(dir,pattern = '.out.h5',full.names = T)) 
 df_data <- my_read(dir,flag = 'matrix')
 
 
+
 # work with staggered magnetization ---------------------------------------
 
 
